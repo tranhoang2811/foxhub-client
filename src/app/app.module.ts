@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeServiceComponent } from './components/home-service/home-service.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { HistoryDetailComponent } from './components/history-detail/history-detail.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HistoryDetailComponent } from './components/history-detail/history-deta
     FooterComponent,
     HomeServiceComponent,
     ReservationComponent,
-    HistoryDetailComponent
+    HistoryDetailComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
