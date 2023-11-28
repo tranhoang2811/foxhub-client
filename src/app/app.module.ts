@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeServiceComponent } from './components/home-service/home-service.component';
+import { ReservationComponent } from './components/reservation/reservation.component';
+import { HistoryDetailComponent } from './components/history-detail/history-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeServiceComponent
+    HomeServiceComponent,
+    ReservationComponent,
+    HistoryDetailComponent
   ],
   imports: [
     BrowserModule,
