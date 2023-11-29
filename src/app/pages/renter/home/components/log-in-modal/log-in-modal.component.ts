@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SignUpModalComponent } from '../sign-up-modal/sign-up-modal.component';
 
 @Component({
   selector: 'app-log-in-modal',
@@ -7,9 +8,22 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./log-in-modal.component.css'],
 })
 export class LogInModalComponent {
-  constructor(private activeModal: NgbActiveModal) {}
+  @Input() public openSignUpModal!: Function;
+
+  constructor(
+    private activeModal: NgbActiveModal,
+    private modelService: NgbModal
+  ) {}
 
   public closeModal(): void {
     this.activeModal.close();
+  }
+
+  public switchToSignUpModal(): void {
+    this.closeModal();
+    this.modelService.open(SignUpModalComponent, {
+      centered: true,
+      modalDialogClass: 'sign-up-modal',
+    });
   }
 }

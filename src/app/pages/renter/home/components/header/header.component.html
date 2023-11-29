@@ -8,8 +8,8 @@
             <a class="nav-link" href="#">Blog</a>
         </nav>
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn log-in">Login</button>
-            <button type="button" class="btn sign-up">Sign up</button>
+            <button type="button" class="btn log-in" (click)="openLogInModal()">Login</button>
+            <button type="button" class="btn sign-up" (click)="openSignUpModal()">Sign up</button>
         </div>
     </div>
     <h1>
@@ -19,13 +19,9 @@
     </h1>
     <div class="btn-group filter" role="group">
         <button type="button" class="btn">Place</button>
-        <span class="vertical-divider"></span>
         <button type="button" class="btn">Check in</button>
-        <span class="vertical-divider"></span>
         <button type="button" class="btn">Check out</button>
-        <span class="vertical-divider"></span>
         <button type="button" class="btn">Guest</button>
-        <span class="vertical-divider"></span>
         <i class="btn bi bi-search"></i>
     </div>
 </header>
