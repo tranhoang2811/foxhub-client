@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <div>
+        <h3>Choose a registration method</h3>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+</div>
+<div class="modal-body">
+    <div class="d-flex flex-column sign-up-option-list">
+        <button type="button" class="btn btn-outline-dark">
+            <img src="assets/svg/apple.svg">
+            Continue with Apple
+        </button>
+        <button type="button" class="btn btn-outline-dark">
+            <img src="assets/svg/google.svg">
+            Continue with Google
+        </button>
+
+        <button type="button" class="btn btn-outline-dark">
+            <img src="assets/svg/facebook.svg">
+            Continue with Facebook
+        </button>
+    </div>
+</div>
+<div class="modal-footer">
+    <p>
+        Already have an account?
+        <br>
+        <button class="btn" (click)="switchToLogInModal()">Login</button>
+    </p>
+</div>

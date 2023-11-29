@@ -1,0 +1,96 @@
+header {
+    min-height: 700px;
+    background-image: linear-gradient(to right,
+            rgba(205, 92, 8, 0.3),
+            rgba(205, 92, 8, 0.1)),
+        url(src/assets/images/renter-header.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 72px;
+    border-bottom-right-radius: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container {
+    background-color: #F5EEE8;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 68px;
+    width: 100%;
+}
+
+.navbar-container img {
+    max-height: 68px;
+}
+
+.navbar-container .nav-link {
+    color: #BF6326;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.navbar-container .btn-group {
+    gap: 12px;
+}
+
+.navbar-container .btn-group .btn {
+    border-radius: 16px !important;
+}
+
+.navbar-container .btn-group .log-in {
+    color: white;
+    background-color: #BF6326;
+    padding: 8px 28px;
+}
+
+.navbar-container .btn-group .sign-up {
+    background-color: transparent !important;
+    padding: 8px 24px;
+}
+
+.navbar-container .btn-group .btn:hover {
+    background-color: #bf6326b8 !important;
+}
+
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Inter;
+    font-weight: 900;
+    text-align: center;
+}
+
+.filter {
+    margin-bottom: 40px;
+}
+
+.filter .btn {
+    background-color: white;
+    color: #BF6326;
+    padding: 8px 36px;
+}
+
+.filter .btn:hover {
+    background-color: rgba(255, 255, 255, 0.629);
+}
+
+.filter i {
+    display: flex;
+    align-items: center;
+    color: #BF6326;
+    padding: 8px 16px !important;
+}
+
+.filter .vertical-divider {
+    height: 100%;
+    border: 0.1px solid #406567;
+}

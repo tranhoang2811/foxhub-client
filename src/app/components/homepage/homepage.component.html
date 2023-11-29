@@ -1,0 +1,431 @@
+<header class="section__container header__container">
+    <div class="header__image__container">
+      <div class="header__content">
+        <h1>One Stay At A Time</h1>
+      </div>
+      <div class="booking__container">
+        <form>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Location</label>
+            </div>
+            <p>Where are you going?</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Check In</label>
+            </div>
+            <p>Add date</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Check Out</label>
+            </div>
+            <p>Add date</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Guests</label>
+            </div>
+            <p>Add guests</p>
+          </div>
+        </form>
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="packages" id="packages">
+    <h1 class="heading">BEST FOR YOU</h1>
+    <div class="box-container">
+      <div class="box">
+        <img decoding="async" src="img/h1.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> District 2 - HCM City</h3>
+          <p>
+            Owner: Tu Nguyen
+            Live with host family
+            About 1km from Ho Chi Minh city center
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img decoding="async" src="img/h3.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> District 1 - HCM City</h3>
+          <p>
+            Owner: My Dinh
+Live with host family
+About 1km from Ho Chi Minh city center  
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img decoding="async" src="img/h4.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Thu Duc District - HCM City</h3>
+          <p>
+            Owner: Quynh Nguyen
+Live with host family
+About 3.8km from Ho Chi Minh city center
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="rectangle"></section>
+  <section class="packages" id="packages">
+    <style>
+      .popular-recent-suggestion {
+        display: flex;
+        justify-content: center;
+        padding: 2.5rem 0;
+      }
+      .popular-recent-suggestion button {
+        background-color: #f3ece6;
+        color: black;
+        font-size: 18px;
+        padding: 2rem 3rem;
+        border: 0.2rem #f3ece6;
+        width: 200px;
+      }
+
+      .popular-recent-suggestion button {
+        border-radius: 30px;
+
+      }
+      .popular-recent-suggestion button:hover {
+        background-color: #33666880;
+        transition: all 0.1s ease;
+        cursor: pointer;
+        color: white;
+      }
+      .popular-recent-suggestion button.active {
+        background-color: #336668;
+        color: #fff;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+
+    </style>
+    <div class="popular-recent-suggestion">
+      <span style="background-color: #f3ece6; border-radius: 30px; ">
+        <button class="popular active" onclick="toggleActive(this)">Popular</button>
+        <button class="recent" onclick="toggleActive(this)">Recent</button>
+        <button class="suggestion" onclick="toggleActive(this)">Suggestion</button>
+      </span>
+    </div>
+    <script>
+      function toggleActive(button) {
+        const buttons = document.querySelectorAll('.popular-recent-suggestion button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      }
+    </script>
+
+
+
+    <div class="box-container">
+      <div class="box">
+        <img decoding="async" src="img/h5.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> District 2 - HCM City</h3>
+          <p>
+            Owner: Ngoc Lam
+Live with host family
+About 2.2km from Ho Chi Minh city center
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img decoding="async" src="img/h6.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> District 2 - HCM City</h3>
+          <p>
+            Owner: My Dinh
+            Live with host family
+            About 1km from Ho Chi Minh city center
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img decoding="async" src="img/h2.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> District 2 - HCM City</h3>
+          <p>
+            Owner: Tu Nguyen
+Live with host family
+About 1km from Ho Chi Minh city center
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00 <span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="rectangle"></section>
+
+  <section class="review" id="review">
+    <h1 class="heading">ADVENTURE ON YOUR WAY</h1>
+    <div
+      class="swiper mySwiper review-slider swiper-initialized swiper-horizontal swiper-pointer-events"
+    >
+      <div
+        class="swiper-wrapper wrapper"
+        id="swiper-wrapper-f454b1599cdebfd1"
+        aria-live="off"
+        style="
+          transition-duration: 0ms;
+          transform: translate3d(-1184px, 0px, 0px);
+        "
+      >
+        <div
+          class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+          role="group"
+          aria-label="2 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="1"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Edward Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+          role="group"
+          aria-label="3 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="2"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Jenna Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide swiper-slide-duplicate"
+          role="group"
+          aria-label="4 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="3"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Edward Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide swiper-slide-prev"
+          role="group"
+          aria-label="1 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="0"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Lalisa Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper-slide swiper-slide-active"
+          role="group"
+          aria-label="2 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="1"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Edward Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper-slide swiper-slide-next"
+          role="group"
+          aria-label="3 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="2"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Jenna Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper-slide"
+          role="group"
+          aria-label="4 / 4"
+          style="width: 276px; margin-right: 20px"
+          data-swiper-slide-index="3"
+        >
+          <div class="box">
+            <img decoding="async" src="img/p-1.jpg" alt="" />
+            <h3>Edward Bey</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the farhan and typesetting
+              industry. Lorem Ipsum is simply dummy text of the farhan and
+              typesetting industry Lorem Ipsum is simply dummy text of the
+              farhan and typesetting industry farhan and typesetting industry.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
+      </div>
+    </div>
+  </section>
+  <section class="rectangle"></section>

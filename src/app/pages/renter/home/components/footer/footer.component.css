@@ -1,0 +1,63 @@
+footer {
+    background-color: #BF6326;
+    color: white;
+    padding: 32px;
+    height: 380px;
+}
+
+.footer-main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    width: fit-content;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.address-section {
+    max-width: 32%;
+}
+
+.address-section iframe {
+    border-radius: 24px;
+    max-height: 200px;
+}
+
+.gov-image {
+    width: 180px;
+}
+
+.contact-icon-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.contact-icon-container img {
+    width: 40px;
+}
+
+.download-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.download-icon-container img {
+    max-width: 160px;
+    cursor: pointer;
+}
+
+footer>p {
+    text-align: center;
+}
