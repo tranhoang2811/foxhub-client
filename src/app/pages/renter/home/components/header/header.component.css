@@ -3,7 +3,7 @@ header {
     background-image: linear-gradient(to right,
             rgba(205, 92, 8, 0.3),
             rgba(205, 92, 8, 0.1)),
-        url(../../../../../../assets/images/renter-header.png);
+        url(src/assets/images/renter-header.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
