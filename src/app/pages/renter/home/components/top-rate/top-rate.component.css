@@ -1,0 +1,41 @@
+.best-for-you-section {
+    background-color: white;
+    padding: 24px;
+}
+
+.best-for-you-section h2 {
+    text-align: center;
+    color: #A54C20;
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.top-rate-container .top-rate-item {
+    width: fit-content;
+}
+
+.top-rate-item img {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.top-rate-item p {
+    margin: 0;
+}
+
+.top-rate-item .item-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-rate-item .item-address span {
+    display: flex;
+    gap: 8px;
+}
+
+.top-rate-item .item-address span i {
+    display: flex;
+    align-items: center;
+}

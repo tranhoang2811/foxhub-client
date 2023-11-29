@@ -3,28 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeServiceComponent } from './components/home-service/home-service.component';
-import { ReservationComponent } from './components/reservation/reservation.component';
-import { HistoryDetailComponent } from './components/history-detail/history-detail.component';
-import { HomepageComponent } from './components/homepage/homepage.component';
+import { OwnerModule } from './pages/owner/owner.module';
+import { RenterModule } from './pages/renter/renter.module';
+import { StaffModule } from './pages/staff/staff.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeServiceComponent,
-    ReservationComponent,
-    HistoryDetailComponent,
-    HomepageComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RenterModule,
+    OwnerModule,
+    StaffModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
