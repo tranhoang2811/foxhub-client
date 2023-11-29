@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    width: fit-content;
+}
+
+.carousel {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

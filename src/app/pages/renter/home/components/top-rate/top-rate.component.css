@@ -1,3 +1,8 @@
+:host {
+    display: block;
+    margin-top: 80px;
+}
+
 .best-for-you-section {
     background-color: white;
     padding: 24px;
@@ -11,14 +16,8 @@
     font-weight: 700;
 }
 
-.top-rate-container .top-rate-item {
-    width: fit-content;
-}
-
-.top-rate-item img {
-    height: 320px;
-    width: 320px;
-    object-fit: cover;
+.top-rate-item {
+    width: 30%;
 }
 
 .top-rate-item p {
@@ -31,7 +30,7 @@
 }
 
 .top-rate-item .item-address span {
-    display: flex;
+    display: inline-flex;
     gap: 8px;
 }
 

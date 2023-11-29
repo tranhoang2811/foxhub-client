@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { OwnerModule } from './pages/owner/owner.module';
 import { RenterModule } from './pages/renter/renter.module';
 import { StaffModule } from './pages/staff/staff.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { StaffModule } from './pages/staff/staff.module';
     RenterModule,
     OwnerModule,
     StaffModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
