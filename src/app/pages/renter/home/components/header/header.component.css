@@ -15,52 +15,6 @@ header {
     justify-content: space-between;
 }
 
-.navbar-container {
-    background-color: #F5EEE8;
-    padding: 0 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 68px;
-    width: 100%;
-}
-
-.navbar-container img {
-    max-height: 68px;
-}
-
-.navbar-container .nav-link {
-    color: #BF6326;
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 700;
-    vertical-align: middle;
-}
-
-.navbar-container .btn-group {
-    gap: 12px;
-}
-
-.navbar-container .btn-group .btn {
-    border-radius: 16px !important;
-}
-
-.navbar-container .btn-group .log-in {
-    color: white;
-    background-color: #BF6326;
-    padding: 8px 28px;
-}
-
-.navbar-container .btn-group .sign-up {
-    background-color: transparent !important;
-    padding: 8px 24px;
-}
-
-.navbar-container .btn-group .btn:hover {
-    background-color: #bf6326b8 !important;
-}
-
-
 h1 {
     color: white;
     font-size: 60px;
