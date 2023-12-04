@@ -1,0 +1,50 @@
+:host {
+    width: 48%;
+}
+
+h2 {
+    margin: 0;
+    color: #BF6326;
+    font-family: Inter;
+}
+
+hr {
+    border: 1px #BEBEBE solid;
+    margin: 8px 0;
+}
+
+.reservation-status-option {
+    gap: 28px;
+    margin-bottom: 8px;
+}
+
+.reservation-status-option span {
+    color: #406567;
+}
+
+.reservation-status-option span:hover {
+    cursor: pointer;
+}
+
+.list {
+    height: 78%;
+}
+
+.pagination-container {
+    height: fit-content;
+    margin-top: 12px;
+}
+
+.pagination-container li {
+    color: red
+}
+
+ngb-pagination ::ng-deep ul>li:not(.active)>a {
+    color: #336668 !important
+}
+
+
+
+ngb-pagination ::ng-deep ul>li.active>a {
+    background-color: #336668 !important
+}
