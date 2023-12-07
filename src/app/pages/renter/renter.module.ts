@@ -20,6 +20,10 @@ import { HistoryItemComponent } from './reservation-history/components/history-i
 import { HeaderNavBarComponent } from './components/header-nav-bar/header-nav-bar.component';
 import { HistoryListComponent } from './reservation-history/components/history-list/history-list.component';
 import { ReservationMapComponent } from './reservation-history/components/reservation-map/reservation-map.component';
+import { AccommodationListComponent } from './home/components/accommodation-list/accommodation-list.component';
+import { AccommodationItemComponent } from './home/components/accommodation-list/components/accommodation-item/accommodation-item.component';
+import { AccommodationTypeOptionComponent } from './home/components/accommodation-list/components/accommodation-type-option/accommodation-type-option.component';
+import { AdventureSectionComponent } from './home/components/adventure-section/adventure-section.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { ReservationMapComponent } from './reservation-history/components/reserv
     HeaderNavBarComponent,
     HistoryListComponent,
     ReservationMapComponent,
+    AccommodationListComponent,
+    AccommodationItemComponent,
+    AccommodationTypeOptionComponent,
+    AdventureSectionComponent,
   ],
   imports: [
     CommonModule,
