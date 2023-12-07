@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+.reservation-history-content {
+    height: 90%;
+    padding: 12px 40px 0px;
+}

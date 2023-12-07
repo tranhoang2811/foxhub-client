@@ -1,6 +1,5 @@
 :host {
     display: block;
-    margin-top: 80px;
 }
 
 .best-for-you-section {
@@ -16,25 +15,22 @@
     font-weight: 700;
 }
 
-.top-rate-item {
-    width: 30%;
-}
-
-.top-rate-item p {
+p {
     margin: 0;
 }
 
-.top-rate-item .item-address {
+.item-address {
+    margin-top: 12px;
     display: flex;
     justify-content: space-between;
 }
 
-.top-rate-item .item-address span {
+.item-address span {
     display: inline-flex;
     gap: 8px;
 }
 
-.top-rate-item .item-address span i {
+.item-address span i {
     display: flex;
     align-items: center;
 }
