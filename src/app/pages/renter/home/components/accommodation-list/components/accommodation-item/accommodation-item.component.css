@@ -1,0 +1,19 @@
+p {
+    margin: 0;
+}
+
+.item-address {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-address span {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.item-address span i {
+    display: flex;
+    align-items: center;
+}

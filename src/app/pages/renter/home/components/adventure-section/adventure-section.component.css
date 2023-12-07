@@ -1,0 +1,25 @@
+:host {
+    width: 100%;
+    background-color: white !important;
+    padding: 24px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    color: #406567;
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.adventure-content {
+    gap: 20px !important
+}

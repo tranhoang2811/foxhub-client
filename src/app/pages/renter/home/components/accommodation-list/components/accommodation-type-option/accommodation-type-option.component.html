@@ -1,0 +1,8 @@
+<div class="btn-group" role="group">
+    <button type="button" class="btn" [class.active]="selectedType==='popular'"
+        (click)="toggleOptionButton('popular')">Popular</button>
+    <button type="button" class="btn" [class.active]="selectedType==='recent'"
+        (click)="toggleOptionButton('recent')">Recent</button>
+    <button type="button" class="btn" [class.active]="selectedType==='suggestion'"
+        (click)="toggleOptionButton('suggestion')">Suggestion</button>
+</div>

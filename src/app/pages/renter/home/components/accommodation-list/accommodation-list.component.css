@@ -1,0 +1,18 @@
+:host {
+    width: 100%;
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+}
+
+a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 400;
+}

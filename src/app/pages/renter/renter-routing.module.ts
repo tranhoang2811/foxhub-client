@@ -5,6 +5,11 @@ import { ReservationHistoryComponent } from './reservation-history/reservation-h
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'renter/home',
+    pathMatch: 'full',
+  },
+  {
     path: 'renter/home',
     component: HomeComponent,
   },
