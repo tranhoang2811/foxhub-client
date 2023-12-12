@@ -27,6 +27,7 @@ import { AdventureSectionComponent } from './home/components/adventure-section/a
 import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HomeServiceComponent } from './home-service/home-service.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { HomeServiceComponent } from './home-service/home-service.component';
     AccommodationDetailComponent,
     SignUpFormComponent,
     HomeServiceComponent,
+    StoryComponent,
   ],
   imports: [
     CommonModule,

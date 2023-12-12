@@ -1,0 +1,215 @@
+body {
+    overflow: auto;
+}
+
+.header{
+    left: 0;
+    width: 100%;
+    background-color: #bf6326; 
+    color: #fff; 
+    padding: 15px; 
+    border-bottom: 1px solid #ddd;
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    align-items: flex-start;
+    color: #bf6326;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left-content {
+    width: 700px;
+    top: 300px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    color: #000000;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.right-content {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    top: 60px;
+    right: 490;
+    margin-top: 80px;
+    margin-right: 1px; 
+    margin-left: 930px;
+    transition: transform 0.3s ease;
+}   
+
+.right-content:hover{
+    transform: scale(1.1); 
+    z-index: 1; 
+}
+
+.right-content img {
+    width: 350px; 
+    height: 420px; 
+    border-radius: 0 100px 0 0;
+}
+
+.middle{
+    position: absolute;
+    left: 0;
+    top: 650px;
+    width: 100%; 
+    height: 275px;
+    background-color: #292E36;
+    color: #fff;
+    padding: 15px;
+    opacity: 0.9;
+}
+
+.mission {
+    position: relative;
+    top: 80px;
+    width: 588px;
+    margin-left: 40px;
+    font-family: "Raleway-Italic", Helvetica;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 25.7px;
+}
+
+.vision {
+    position: relative;
+    top: -45px;
+    width: 588px;
+    margin-left: 750px;
+    margin-right: 40px;
+    font-family: "Raleway-Italic", Helvetica;
+    font-style: italic;
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 25.7px;
+}
+
+.mission-title {
+    position: relative;
+    top: 70px;
+    width: 167px;
+    margin-left: 250px;
+    font-family: "Raleway-Bold", Helvetica;
+    font-weight: 600;
+    color: #f3ece6;
+    font-size: 20px;
+    text-align: center;
+}
+
+.vision-title {
+    position: relative;
+    top: -50px;
+    width: 167px;
+    margin-left: 980px;
+    font-family: "Raleway-Bold", Helvetica;
+    font-weight: 600;
+    color: #f3ece6;
+    font-size: 20px;
+    text-align: center;
+}
+
+.founder-title {
+    position: relative;
+    width: 678px;
+    margin-top: 500px;
+    margin-left: 365px;
+    font-family: "Raleway-Bold", Helvetica;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.image-container img {
+    position: relative;
+    width: 20%; 
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+}
+
+.image-container img:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.1); 
+    z-index: 1; 
+}
+
+.client {
+    position: absolute;
+    left: 0;
+    top: 1700px;
+    width: 100%; 
+    height: 400px;
+    background-color: #f3ece6;
+    padding: 15px;
+}
+
+.client-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Helvetica;
+    color: #bf6326; 
+}
+
+.ngoac{
+    position: relative;
+    width: 46px;
+    height: 34px;
+    margin-left: 670px;
+    margin-top: 350px;
+}
+
+.comment{
+    position: absolute;
+    width: 840px;
+    top: 1855px;
+    left: 300px;
+    font-family: "Cormorant Infant-Italic", Helvetica;
+    font-style: italic;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    line-height: 36.6px;
+}
+
+.ngoac-flip {
+    transform: scaleX(-1);
+    position: relative;
+    margin-left: 670px;
+    margin-top: 120px;
+}
+
+.client-name{
+    position: relative;
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: 600px;
+    font-family: "Raleway-Bold", Helvetica;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
