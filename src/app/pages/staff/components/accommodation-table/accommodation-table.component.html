@@ -1,1 +1,25 @@
 <p>accommodation-table works!</p>
+<div class="table-container">
+  <table class="accommodation-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Owner Name</th>
+        <th>Address</th>
+        <th>Date Apply</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let accommodation of accommodations">
+        <td>{{ accommodation.id }}</td>
+        <td>{{ accommodation.ownerName }}</td>
+        <td>{{ accommodation.address }}</td>
+        <td>{{ accommodation.dateApply }}</td>
+        <td><div [ngClass]="getStatusClass(accommodation.status)">{{ accommodation.status }}</div></td>
+        <td><img src="assets/icons/edit.png" alt="edit-icon" style="width: 20px; height: 20px;"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
