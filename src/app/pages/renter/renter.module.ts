@@ -24,6 +24,7 @@ import { AccommodationListComponent } from './home/components/accommodation-list
 import { AccommodationItemComponent } from './home/components/accommodation-list/components/accommodation-item/accommodation-item.component';
 import { AccommodationTypeOptionComponent } from './home/components/accommodation-list/components/accommodation-type-option/accommodation-type-option.component';
 import { AdventureSectionComponent } from './home/components/adventure-section/adventure-section.component';
+import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { AdventureSectionComponent } from './home/components/adventure-section/a
     AccommodationItemComponent,
     AccommodationTypeOptionComponent,
     AdventureSectionComponent,
+    AccommodationDetailComponent,
   ],
   imports: [
     CommonModule,
