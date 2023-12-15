@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { OwnerModule } from './pages/owner/owner.module';
 import { RenterModule } from './pages/renter/renter.module';
 import { StaffModule } from './pages/staff/staff.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     OwnerModule,
     StaffModule,
     NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

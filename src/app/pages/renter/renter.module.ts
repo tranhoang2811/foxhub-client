@@ -4,6 +4,8 @@ import {
   NgbCarouselModule,
   NgbModalModule,
   NgbPaginationModule,
+  NgbInputDatepicker,
+  NgbDatepickerModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -28,6 +30,9 @@ import { AccommodationDetailComponent } from './accommodation-detail/accommodati
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HomeServiceComponent } from './home-service/home-service.component';
 import { StoryComponent } from './story/story.component';
+import { PaymentFormComponent } from './accommodation-detail/components/payment-form/payment-form.component';
+import { EditGuestNumberModalComponent } from './accommodation-detail/components/payment-form/components/edit-guest-number-modal/edit-guest-number-modal.component';
+import { EditTimeModalComponent } from './accommodation-detail/components/payment-form/components/edit-time-modal/edit-time-modal.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +56,9 @@ import { StoryComponent } from './story/story.component';
     SignUpFormComponent,
     HomeServiceComponent,
     StoryComponent,
+    PaymentFormComponent,
+    EditGuestNumberModalComponent,
+    EditTimeModalComponent,
   ],
   imports: [
     CommonModule,
@@ -59,6 +67,8 @@ import { StoryComponent } from './story/story.component';
     NgbModalModule,
     NgbPaginationModule,
     GoogleMapsModule,
+    NgbInputDatepicker,
+    NgbDatepickerModule
   ],
 })
 export class RenterModule {}
