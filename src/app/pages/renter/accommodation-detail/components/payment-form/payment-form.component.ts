@@ -12,14 +12,13 @@ export class PaymentFormComponent {
   public openEditTimeModal(): void {
     const EditTimeModal = this.modelService.open(EditTimeModalComponent, {
       centered: true,
-      size: 'lg',
-      modalDialogClass: 'log-in-modal',
+      modalDialogClass: 'edit-time-modal',
     });
   }
   public openEditGuestNumberModal(): void {
     const EditGuestNumberModal = this.modelService.open(EditGuestNumberModalComponent, {
       centered: true,
-      modalDialogClass: 'log-in-modal',
+      modalDialogClass: 'edit-guest-number-modal',
     });
   }
 }
