@@ -25,6 +25,7 @@ import { AccommodationItemComponent } from './home/components/accommodation-list
 import { AccommodationTypeOptionComponent } from './home/components/accommodation-list/components/accommodation-type-option/accommodation-type-option.component';
 import { AdventureSectionComponent } from './home/components/adventure-section/adventure-section.component';
 import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
+import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AccommodationDetailComponent } from './accommodation-detail/accommodati
     AccommodationTypeOptionComponent,
     AdventureSectionComponent,
     AccommodationDetailComponent,
+    SignUpFormComponent,
   ],
   imports: [
     CommonModule,
