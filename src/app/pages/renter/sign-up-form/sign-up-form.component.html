@@ -1,66 +1,55 @@
-<header>
-  <div>
-    <img class="logo" src="/Form/rav (7).png" alt="Logo">
-  </div>
-
-  <div class="buttons">
-    <button onclick="location.href='/login'">Log In</button>
-    <button onclick="location.href='/signup'">Sign Up</button>
-  </div>
-</header>
-
-<div>
-  <img src="/Form/image-30.png">
-</div>
-<div id="form-container">
-  <h2>Create New Account</h2>
-
-  <table border="0">
-    <form action="/submit_registration" method="post">
-      <div class="container">
-        <hr>
-        <tr>
-          <td>
-            <label for="uname"><b>First Name</b></label>
-          </td>
-          <td>
-            <input type="text" placeholder="Enter First Name" name="uname" required>
-          </td>
-          <td><label for="lname"><b>Last Name</b></label></td>
-          <td><input type="text" placeholder="Enter Last Name" name="lname" required></td>
-        </tr>
-        <tr>
-          <td><label for="email"><b>Email</b></label></td>
-          <td><input type="email" placeholder="Enter Email" name="email" required></td>
-        </tr>
-        <tr>
-          <td><label for="country"><b>Country</b></label></td>
-          <td><input type="text" placeholder="Enter Country" name="country" required></td>
-          <td><label for="tel"><b>Number</b></label></td>
-          <td><input type="tel" placeholder="Enter Number" name="tel" required></td>
-        </tr>
-        <tr>
-          <td><label for="psw"><b>Password</b></label></td>
-          <td>
-            <input id="password" type="password" placeholder="Enter Password" name="psw" required
-              oninput="validatePassword()">
-            <div id="password-message" class="password-message"></div>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="4">
-            <div class="checkbox-container">
-              <input type="checkbox" id="policy" name="policy" required>
-              <label for="policy" class="checkbox-label">I agree with policy</label>
+<app-header-nav-bar></app-header-nav-bar>
+<div class="d-flex justify-content-around ">
+  <div class="fix-size">
+    <div class="img-wrapper">
+      <img src="assets/images/formsignup-image.png">
+    </div>
+    <div class="content-form justify-content-between">
+      <h2>Create New Account</h2>
+      <hr>
+      <form class="d-flex flex-column">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td style="text-align: center" colspan="4">
-            <button type="submit">Submit</button>
-          </td>
-        </tr>
-      </div>
-    </form>
-  </table>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="number">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="agree-policy">
+          <label class="form-check-label" for="exampleCheck1">I agree with policy</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
 </div>

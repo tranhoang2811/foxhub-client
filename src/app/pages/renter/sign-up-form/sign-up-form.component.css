@@ -1,30 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: Raleway, sans-serif;
     background-color: #ffffff;
     font-size: 14px;
 }
 
 h2 {
     text-align: center;
-}
-
-#form-container {
-    margin-left: 40%;
-    margin-top: 6%;
-}
-
-table {
-    margin: auto;
-    border-collapse: collapse;
-    width: 80%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-th,
-td {
-    padding: 10px 20px 15px 10px;
-    text-align: left;
 }
 
 label {
@@ -34,7 +16,6 @@ label {
 input {
     width: calc(100% - 14px);
     padding: 10px;
-    margin: 5px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -49,34 +30,16 @@ button {
     border: none;
     cursor: pointer;
     width: 50%;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
-button:hover {
-    opacity: 0.8;
+.img-wrapper {
+    height: 500px;
+    border-radius: 10px;
 }
 
 img {
-    width: 35%;
-    border-radius: 10px;
-    float: left;
-    margin-right: px;
-    margin-left: px;
-    margin-top: 100px
-}
-
-.password-message {
-    font-size: 14px;
-    color: #555;
-}
-
-.checkbox-container {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-label {
-    margin-left: 8px;
+    height: 100%;
 }
 
 input[type="checkbox"] {
@@ -87,45 +50,16 @@ input[type="checkbox"] {
 hr {
     border: 0;
     height: 1px;
-    background: #ccc;
+    background: #575757;
     width: 77%;
     margin: 20px auto;
 }
 
-header {
-    background-color: #ffffff;
-    padding: 15px;
-    text-align: center;
-    color: white;
+.btn-primary{
+    width:40%;
+    margin:auto;
 }
 
-header img.logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-header .buttons {
-    display: flex;
-    gap: 10px;
-    width: 200px
-}
-
-header .buttons button {
-    background-color: #CD5C08;
-    color: white;
-    padding: 6px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-header .buttons button:hover {
-    opacity: 0.8;
-}
-
-header .buttons {
-    margin-left: auto;
+.fix-size{
+    margin: 70px;
 }
