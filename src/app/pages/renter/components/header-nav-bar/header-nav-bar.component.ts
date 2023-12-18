@@ -16,12 +16,20 @@ export class HeaderNavBarComponent {
       centered: true,
       modalDialogClass: 'log-in-modal',
     });
+    logInModal.componentInstance.onOpenSignupModal.subscribe(() => {
+      logInModal.close();
+      this.openSignUpModal();
+    });
   }
 
   public openSignUpModal(): void {
     const signUpModal = this.modelService.open(SignUpModalComponent, {
       centered: true,
       modalDialogClass: 'sign-up-modal',
+    });
+    signUpModal.componentInstance.onOpenLogInModal.subscribe(() => {
+      signUpModal.close();
+      this.openLogInModal();
     });
   }
 }

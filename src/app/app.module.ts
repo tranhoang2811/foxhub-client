@@ -7,6 +7,7 @@ import { OwnerModule } from './pages/owner/owner.module';
 import { RenterModule } from './pages/renter/renter.module';
 import { StaffModule } from './pages/staff/staff.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     OwnerModule,
     StaffModule,
     NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
