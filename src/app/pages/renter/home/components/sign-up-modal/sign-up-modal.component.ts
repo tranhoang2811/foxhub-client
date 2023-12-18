@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { LogInModalComponent } from '../log-in-modal/log-in-modal.component';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-sign-up-modal',
@@ -8,20 +8,20 @@ import { LogInModalComponent } from '../log-in-modal/log-in-modal.component';
   styleUrls: ['./sign-up-modal.component.css'],
 })
 export class SignUpModalComponent {
-  constructor(
-    private activeModal: NgbActiveModal,
-    private modelService: NgbModal
-  ) {}
+  @Output() public onOpenLogInModal = new EventEmitter<void>();
+
+  constructor(private activeModal: NgbActiveModal, private router: Router) {}
 
   public closeModal(): void {
     this.activeModal.close();
   }
 
   public switchToLogInModal(): void {
+    this.onOpenLogInModal.emit();
+  }
+
+  public gotoSignupPage(): void {
+    this.router.navigate(['/renter/sign-up']);
     this.closeModal();
-    this.modelService.open(LogInModalComponent, {
-      centered: true,
-      modalDialogClass: 'log-in-modal',
-    });
   }
 }

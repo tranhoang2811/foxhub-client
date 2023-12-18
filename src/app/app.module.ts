@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { OwnerModule } from './pages/owner/owner.module';
 import { RenterModule } from './pages/renter/renter.module';
 import { StaffModule } from './pages/staff/staff.module';
-import { NgbModule, } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     StaffModule,
     NgbModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

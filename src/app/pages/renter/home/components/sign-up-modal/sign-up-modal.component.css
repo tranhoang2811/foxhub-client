@@ -54,6 +54,15 @@ button {
     color: black;
 }
 
+.create-account-button {
+    width: 100%;
+    background-color: #BF6326;
+    color: white;
+    text-align: center !important;
+    display: block !important;
+    line-height: 32px;
+}
+
 .modal-footer {
     padding: 16px 40px;
     border-top: none;
