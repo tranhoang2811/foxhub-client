@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccommodationTableComponent } from './components/accommodation-table/accommodation-table.component';
 
 const routes: Routes = [
-  {path: "staff/components/accomodationtable",
+  {path: "staff/components/accommodation-table",
   component: AccommodationTableComponent}
 ];
 
