@@ -1,573 +1,260 @@
-@media screen and (max-width: 600px) {
-    p {
-        font-size: 14px;
-    }
-  }
-  
-  .renter-home-service {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .renter-home-service .div {
-    background-color: #ffffff;
-    width: 1520px;
-    height: 3030px;
-    position: relative;
-  }
-  
-  .renter-home-service .overlap {
-    position: absolute;
-    width: 274px;
-    height: 47px;
-    top: 34px;
-    left: 40px;
-  }
-  
-  .renter-home-service .hp {
-    position: absolute;
-    width: 108px;
-    top: 11px;
-    left: 0;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #d1d1d1;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .mask-group {
-    position: absolute;
-    width: 30px;
-    height: 47px;
-    top: 0;
-    left: 101px;
-  }
-  
-  .renter-home-service .hs {
-    position: absolute;
-    width: 145px;
-    top: 11px;
-    left: 129px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #d1d1d1;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .heading4 {
-    position: absolute;
-    width: 452px;
-    top: 2135px;
-    left: 47px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #bf6326;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .heading1 {
-    position: absolute;
-    width: 362px;
-    top: 92px;
-    left: 40px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #bf6326;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .slogan {
-    position: absolute;
-    top: 156px;
-    left: 40px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #0000004c;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .quote {
-    position: absolute;
-    top: 2798px;
-    left: 50px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000b2;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 35px;
-  }
-  
-  .renter-home-service .overlap-group {
-    position: absolute;
-    width: 274px;
-    height: 24px;
-    top: 1566px;
-    left: 623px;
-  }
-  
-  .renter-home-service .achieve-name2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .overlap-2 {
-    position: absolute;
-    width: 366px;
-    height: 24px;
-    top: 1599px;
-    left: 587px;
-  }
-  
-  .renter-home-service .achieve-price2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #00000099;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .achieve-name {
-    position: absolute;
-    top: 1566px;
-    left: 108px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .achieve-price {
-    position: absolute;
-    top: 1599px;
-    left: 144px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #00000099;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .achieve-name3 {
-    position: absolute;
-    top: 1566px;
-    left: 1172px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .achieve-price3 {
-    position: absolute;
-    top: 1599px;
-    left: 1095px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #00000099;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .clean4u {
-    top: 216px;
-    left: 36px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .clean4u:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .frame-best {
-    position: absolute;
-    width: 267px;
-    height: 277px;
-    top: 14px;
-    left: 19px;
-    background-color: #d9d9d9;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .renter-home-service .best {
-    position: absolute;
-    width: 274px;
-    height: 39px;
-    top: 302px;
-    left: 16px;
-  }
-  
-  .renter-home-service .foxclean {
-    position: absolute;
-    width: 268px;
-    height: 17px;
-    top: 0;
-    left: 0;
-  }
-  
-  .renter-home-service .cube-name {
-    position: absolute;
-    width: 263px;
-    top: 0;
-    left: 0;
-    font-family: "Inter", Helvetica;
-    font-weight: bold;
-    color: #000000;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .cube-star {
-    position: absolute;
-    width: 36px;
-    top: 1px;
-    left: 232px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 12px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .star {
-    position: absolute;
-    width: 15px;
-    height: 14px;
-    top: 1px;
-    left: 215px;
-  }
-  
-  .renter-home-service .cube-hour {
-    position: absolute;
-    width: 72px;
-    top: 20px;
-    left: 3px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 12px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .pvn {
-    top: 216px;
-    left: 1182px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .pvn:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  
-  .renter-home-service .jupviec {
-    top: 216px;
-    left: 800px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .jupviec:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .btaskee {
-    top: 216px;
-    left: 418px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .btaskee:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .heading2 {
-    position: absolute;
-    width: 362px;
-    top: 642px;
-    left: 38px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #bf6326;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .heading3 {
-    position: absolute;
-    width: 473px;
-    top: 1185px;
-    left: 40px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #bf6326;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .heading5 {
-    position: absolute;
-    width: 473px;
-    top: 2726px;
-    left: 50px;
-    font-family: "Inter", Helvetica;
-    font-weight: 700;
-    color: #bf6326;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .renter-home-service .mail {
-    position: absolute;
-    width: 473px;
-    top: 2903px;
-    left: 109px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #bf6326;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    vertical-align: middle;
-  }
-  
-  .renter-home-service .slogan2 {
-    position: absolute;
-    top: 706px;
-    left: 38px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #0000004c;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .renter-home-service .fixhome {
-    top: 766px;
-    left: 34px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .fixhome:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .masterhome {
-    top: 766px;
-    left: 798px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .masterhome:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .nhaxanh {
-    top: 766px;
-    left: 416px;
-    position: absolute;
-    width: 305px;
-    height: 356px;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px #00000040;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .nhaxanh:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm shadow khi hover */
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .achievement1 {
-    position: absolute;
-    width: 388px;
-    height: 264px;
-    top: 1284px;
-    left: 53px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 4px 4px #00000040;
-  }
-  
-  .renter-home-service .frame-achievement {
-    position: relative;
-    width: 349px;
-    height: 228px;
-    top: 18px;
-    left: 19px;
-    background-color: #ffffff;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .renter-home-service .achievement2 {
-    position: absolute;
-    width: 388px;
-    height: 264px;
-    top: 1284px;
-    left: 564px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 4px 4px #00000040;
-  }
-  
-  .renter-home-service .achievement3 {
-    position: absolute;
-    width: 388px;
-    height: 264px;
-    top: 1284px;
-    left: 1076px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 4px 4px #00000040;
-  }
-  
-  .renter-home-service .icon {
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    top: 2904px;
-    left: 50px;
-  }
-  
-  .renter-home-service .why1 {
-    position: absolute;
-    width: 902px;
-    height: 422px;
-    top: 1774px;
-    left: 564px;
-    background-color: #d9d9d9;
-    border-radius: 22px;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .why1:hover {
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .why2 {
-    position: absolute;
-    width: 439px;
-    height: 421px;
-    top: 2221px;
-    left: 564px;
-    background-color: #d9d9d9;
-    border-radius: 22px;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .why2:hover {
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  .renter-home-service .why3 {
-    position: absolute;
-    width: 439px;
-    height: 421px;
-    top: 2221px;
-    left: 1027px;
-    background-color: #d9d9d9;
-    border-radius: 22px;
-    transition: transform 0.3s ease;
-  }
-  
-  .renter-home-service .why3:hover {
-    transform: scale(1.1); /* Phóng to 10% khi rê chuột vào */
-    z-index: 1; /* Đặt z-index để đảm bảo phần tử phóng to nằm trên các phần tử khác */
-  }
-  
-  
+.heading-clean {
+  left: 40px;
+  margin-left: 40px;
+  margin-top: 80px;
+  font-weight: 700;
+  color: #bf6326;
+  font-size: 40px;
+}
+
+.slogan {
+  margin-left: 40px;
+  font-weight: 400;
+  color: #0000004c;
+  font-size: 20px;
+}
+
+.frame {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 270px;
+  height: 280px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.name {
+  font-family: "Inter", Helvetica;
+  font-weight: bold;
+  color: #000000;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.hour {
+  margin-top: 4px;
+  font-family: "Inter", Helvetica;
+  color: #000000;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.clean4u {
+  margin-left: 40px;
+  width: 300px;
+  height: 360px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.clean4u:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.btaskee {
+  width: 300px;
+  height: 360px;
+  left: 380px;
+  top: 185px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
+
+.btaskee:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.jupviec {
+  top: 185px;
+  left: 720px;
+  position: absolute;
+  width: 300px;
+  height: 360px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.jupviec:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.pvn {
+  top: 185px;
+  left: 1060px;
+  position: absolute;
+  width: 305px;
+  height: 356px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.pvn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.heading-fix {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #bf6326;
+  font-size: 40px;
+}
+
+.fixhome {
+  margin-left: 40px;
+  width: 300px;
+  height: 360px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.fixhome:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.nhaxanh {
+  top: 690px;
+  left: 380px;
+  position: absolute;
+  width: 300px;
+  height: 360px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.nhaxanh:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.masterhome {
+  top: 690px;
+  left: 720px;
+  position: absolute;
+  width: 305px;
+  height: 356px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.masterhome:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.heading-collab {
+  width: 440px;
+  margin-left: 40px;
+  margin-top: 400px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #bf6326;
+  font-size: 40px;
+}
+
+.host {
+  width: 820px;
+  height: 400px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 1100px;
+  left: 540px;
+}
+
+.host:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.tourist {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 1520px;
+  left: 540px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tourist:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.partner {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 1520px;
+  left: 960px;
+  background-color: #d9d9d9;
+  border-radius: 22px;
+  transition: transform 0.3s ease;
+}
+
+.partner:hover {
+  transform: scale(1.1);
+}
+
+.heading-question {
+  margin-top: 400px;
+  margin-left: 40px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #bf6326;
+  font-size: 40px;
+}
+
+.statement {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000b2;
+  font-size: 20px;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+}
+
+.mail {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #bf6326;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 40px;
+  top: 2110px;
+}
