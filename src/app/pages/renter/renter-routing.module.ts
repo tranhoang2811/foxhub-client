@@ -26,8 +26,7 @@ const routes: Routes = [
   {
     path: 'renter/home-service',
     component: HomeServiceComponent,
-  }
-
+  },
 ];
 
 @NgModule({
