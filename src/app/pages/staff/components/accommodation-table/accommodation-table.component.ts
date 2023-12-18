@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./accommodation-table.component.css'],
 })
 export class AccommodationTableComponent {
-  // Sample data
   accommodations = [
     {
       id: 'FH030903',
@@ -42,7 +41,7 @@ export class AccommodationTableComponent {
     },
   ];
 
-  getStatusClass(status: string): string {
+  public getStatusClass(status: string): string {
     switch (status.toLowerCase()) {
       case 'pending':
         return 'status-pending';
