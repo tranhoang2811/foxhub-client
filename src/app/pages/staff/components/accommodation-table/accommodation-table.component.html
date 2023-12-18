@@ -1,4 +1,3 @@
-<p>accommodation-table works!</p>
 <div class="table-container">
   <table class="accommodation-table">
     <thead>
@@ -17,8 +16,17 @@
         <td>{{ accommodation.ownerName }}</td>
         <td>{{ accommodation.address }}</td>
         <td>{{ accommodation.dateApply }}</td>
-        <td><div [ngClass]="getStatusClass(accommodation.status)">{{ accommodation.status }}</div></td>
-        <td><img src="assets/icons/edit.png" alt="edit-icon" style="width: 20px; height: 20px;"></td>
+        <td>
+          <div [ngClass]="getStatusClass(accommodation.status)">
+            {{ accommodation.status }}
+          </div>
+        </td>
+        <td>
+          <img
+            src="assets/icons/edit.png"
+            alt="edit-icon"
+          />
+        </td>
       </tr>
     </tbody>
   </table>

@@ -1,76 +1,71 @@
+.table-container {
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid black; /*TODO: Delete after completing*/
+  border-radius: 20px;
+  margin: 20px;
+  width: 1200px; /*TODO: Adjust to fit the user's screen?*/
+  max-height: 290px; /*TODO: Adjust to fit the user's screen?*/
+  overflow-y: scroll;
+}
 .accommodation-table {
   width: 100%;
   border-collapse: collapse;
 }
-.accommodation-table th,
-.accommodation-table td {
-  border: none;
-  padding: 30px;
-  text-align: center;
-}
-.accommodation-table th {
-  text-align: center;
-  padding-top: 10px;
-  color: #bf6326;
-}
-.accommodation-table tbody tr:nth-child(even) {
-  background-color: #f0efef;
-}
-.accommodation-table tbody tr:nth-child(odd) {
-  background-color: white;
-}
-.table-container {
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 2px solid black;
-  border-radius: 30px;
-  margin: 20px;
-  max-height: 290px; /* Đặt chiều cao tối đa cho phần nội dung */
-  overflow-y: scroll; /* Cho phép cuộn theo chiều dọc nếu nội dung vượt quá chiều cao tối đa */
-}
 .accommodation-table thead {
   position: sticky;
   top: 0;
-  background-color: #fff; /* Màu nền của tiêu đề, có thể điều chỉnh theo ý muốn */
+  background-color: #fff;
+}
+.accommodation-table thead th {
+  text-align: center;
+  padding: 28px;
+  color: #bf6326;
+}
+.accommodation-table tbody td {
+  padding: 28px;
+  text-align: center;
+}
+.accommodation-table tbody td img {
+  width: 20px;
+  height: 20px;
 }
 .table-container::-webkit-scrollbar {
-  display: none; /* Ẩn thanh cuộn mặc định của trình duyệt */
+  display: none;
 }
 .status-pending {
   background-color: #fff0bb;
-  padding: 5px; /* Giảm padding xuống 10px */
+  padding: 4px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
-
 .status-approved {
   background-color: #daf6d3;
-  padding: 5px; /* Giảm padding xuống 10px */
+  padding: 4px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
-
 .status-banned {
   background-color: #8f8f8f;
-  padding: 5px; /* Giảm padding xuống 10px */
+  padding: 4px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .status-reject {
   background-color: #ffcdcd;
-  padding: 5px; /* Giảm padding xuống 10px */
+  padding: 4px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
