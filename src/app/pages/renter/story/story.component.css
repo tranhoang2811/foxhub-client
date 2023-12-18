@@ -1,105 +1,61 @@
-body {
-    overflow: auto;
-}
-
-.header{
-    width: 100%;
-    background-color: #bf6326; 
-    color: #fff; 
-    padding: 16px; 
-    font-family: Helvetica;
-    text-align: center;
-    font-weight: bold;
-}
-
 .title {
-    align-items: flex-start;
     color: #bf6326;
     font-weight: bold;
     font-size: 20px;
+    width: fit-content;
 }
 
-.left-content {
-    width: 700px;
-    top: 300px;
-    font-family: "Inter-Regular", Helvetica;
+.about-us-section {
+    max-width: 700px;
     color: #000000;
     font-size: 15px;
     text-align: justify;
     line-height: 30px;
-    margin: 80px 0px 0px 100px;
 }
 
-.right-content {
-    position: absolute;
-    width: 20px;
-    height: 100px;
-    top: 60px;
-    right: 490;
-    margin: 80px 0px 0px 900px;
+.landscape-container {
     transition: transform 0.3s ease;
-}   
-
-.right-content:hover{
-    transform: scale(1.1); 
-    z-index: 1; 
 }
 
-.right-content img {
-    width: 360px; 
-    height: 420px; 
-    border-radius: 0 100px;
+.landscape-container:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.landscape-container img {
+    width: 360px;
+    height: 420px;
+    border-radius: 0 100px 0 0;
 }
 
 .mission-vision {
     margin-top: 160px;
-    width: 100%; 
-    height: 280px;
+    width: 100%;
     background-color: #292E36;
     color: #fff;
-    padding: 16px;
     opacity: 0.9;
 }
 
-.mission {
-    margin-top: 20px;
-    width: 580px;
-    margin-left: 40px;
-    font-family: "Raleway-Italic", Helvetica;
-    font-style: italic;
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-}
-
-.mission-title {
-    margin-top: 60px;
-    margin-left: 260px;
-    font-family: "Raleway-Bold", Helvetica;
-    font-weight: 600;
-    color: #f3ece6;
-    font-size: 20px;
-}
-
+.mission,
 .vision {
-    margin-top: 20px;
-    margin-left: 740px;
-    margin-right: 60px;
-    font-family: "Raleway-Italic", Helvetica;
-    font-style: italic;
-    font-weight: lighter;
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
+    width: 50%;
+    padding: 50px;
 }
 
-.vision-title {
-    margin-top: -132px;
-    margin-left: 980px;
-    font-family: "Raleway-Bold", Helvetica;
+.mission h3,
+.vision h3 {
     font-weight: 600;
     color: #f3ece6;
     font-size: 20px;
+    text-align: center;
+}
+
+.mission p,
+.vision p {
+    font-style: italic;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
 }
 
 .founder-title {
@@ -112,72 +68,59 @@ body {
 }
 
 .image-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .image-container img {
-    width: 20%; 
-    max-width: 100%; 
-    height: auto; 
+    width: 20%;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
     margin-top: 40px;
 }
 
-.image-container img:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    transform: scale(1.1); 
-    z-index: 1; 
+.image-container img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .client {
     margin-top: 160px;
-    width: 100%; 
+    width: 100%;
     height: 400px;
     background-color: #f3ece6;
-    padding: 15px;
+    padding: 16px;
 }
 
 .client-title {
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
-    font-family: Helvetica;
-    color: #bf6326; 
+    color: #bf6326;
 }
 
 .quotation-mark {
     width: 40px;
     height: 40px;
-    margin-top: 20px;
-    margin-left: 640px;
 }
 
 .quotation-mark-flip {
     transform: scaleX(-1);
-    margin-left: 640px;
-    margin-top: 20px;
     width: 40px;
     height: 40px;
 }
 
-.comment{
-    width: 840px;
-    margin-top: 20px;
-    margin-left: 280px;
-    font-family: "Cormorant Infant-Italic", Helvetica;
+.comment {
     font-style: italic;
     color: #000000;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     line-height: 40px;
 }
 
-.client-name{
-    margin-top: 20px;
-    margin-left: 600px;
-    font-family: "Raleway-Bold", Helvetica;
+.client-name {
     color: #000000;
     font-size: 20px;
     font-weight: bold;
