@@ -5,20 +5,23 @@ import { EditTimeModalComponent } from './components/edit-time-modal/edit-time-m
 @Component({
   selector: 'app-payment-form',
   templateUrl: './payment-form.component.html',
-  styleUrls: ['./payment-form.component.css']
+  styleUrls: ['./payment-form.component.css'],
 })
 export class PaymentFormComponent {
   constructor(private modelService: NgbModal) {}
   public openEditTimeModal(): void {
-    const EditTimeModal = this.modelService.open(EditTimeModalComponent, {
+    const editTimeModal = this.modelService.open(EditTimeModalComponent, {
       centered: true,
       modalDialogClass: 'edit-time-modal',
     });
   }
   public openEditGuestNumberModal(): void {
-    const EditGuestNumberModal = this.modelService.open(EditGuestNumberModalComponent, {
-      centered: true,
-      modalDialogClass: 'edit-guest-number-modal',
-    });
+    const editGuestNumberModal = this.modelService.open(
+      EditGuestNumberModalComponent,
+      {
+        centered: true,
+        modalDialogClass: 'edit-guest-number-modal',
+      }
+    );
   }
 }

@@ -1,36 +1,32 @@
 .custom-col {
-    width: 237px;
-    padding: 0;
-  }
-  .container {
-    width: 500px;
-  }
-  .custom-day {
-    text-align: center;
-    padding: 0.185rem 0.25rem;
-    display: inline-block;
-    height: 2rem;
-    width: 2rem;
-  }
-  .custom-day.focused {
-    background-color: #e6e6e6;
-  }
-  .custom-day.range,
-  .custom-day:hover {
-    background-color: #bf6326;
-    color: white;
-  }
-  .custom-day.faded {
-    background-color: rgba(191, 99, 38, 0.5);
-  }
-  .save-button {
-    background-color: #bf6326;
-    color: white;
-  }
-  .font-weight-bold {
-    font-weight: bold;
-  }
-  
-  
-  
-  
+  width: 237px;
+  padding: 0;
+}
+.container {
+  width: 500px;
+}
+.custom-day {
+  text-align: center;
+  padding: 4px;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+.custom-day.range,
+.custom-day:hover {
+  background-color: #bf6326;
+  color: white;
+}
+.custom-day.faded {
+  background-color: rgba(191, 99, 38, 0.5);
+}
+.save-button {
+  background-color: #bf6326;
+  color: white;
+}
+.font-weight-bold {
+  font-weight: bold;
+}

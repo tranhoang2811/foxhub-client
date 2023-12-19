@@ -1,145 +1,77 @@
-.payment-info {
-    padding: 10px;
-    border-radius: 20px;
-    color: black;
-    border: 2px solid black;
-
-  }
-  .payment-info img{
-    width: 100%;
-    height: 250px;
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px black;
-  }
-  
-  .product-details {
-    padding: 10px;
-  }
-  
-  body {
-    background: #eee;
-  }
-  
-  .cart {
-    background: #fff;
-  }
-  
-  .p-about {
-    font-size: 12px;
-  }
-  
-  .table-shadow {
-    -webkit-box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
-    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
-  }
-  
-  .type {
-    font-size: 10px;
-  }
-  .font-weight-bold{
-    font-weight: bold;
-  }
-  .btn {
-    background-color: #bf6326;
-    color: white;
-    border: 2px solid #bf6326;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .btn:hover {
-    background-color: #fff;
-    color: #bf6326; 
-    border: 2px solid #bf6326;
-  }
-  
-  label.radio {
-    cursor: pointer;
-    margin-right: 20px;
-  }
-  
-  label.radio input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  
-  label.radio span {
-    justify-content: center;
-    border: 2px solid #ada9a9;
-    display: flex;
-    color: #8f37aa;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-size: 11px;
-    width: 90px;
-    height: 40px;
-    padding: 5px;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  label.radio img {
-    cursor: pointer;
-  }
-  
-  label.radio input:checked + span {
-    color: #fff;
-    border: 2px solid black;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .credit-inputs {
-    background: rgb(102,102,221);
-    color: #fff !important;
-    border-color: rgb(102,102,221);
-  }
-  
-  .credit-inputs::placeholder {
-    color: #fff;
-    font-size: 13px;
-  }
-  
-  .credit-card-label {
-    font-size: 9px;
-
-  }
-  
-  .form-control.credit-inputs:focus {
-    background: rgb(102,102,221);
-    border: rgb(102,102,221);
-  }
-  
-  .line {
-    border-bottom: 1px solid rgb(102,102,221);
-  }
-  
-  .information span {
-    font-size: 16px;
-  }
-  
-  .information {
-    margin-bottom: 5px;
-  }
-  
-  .items {
-    -webkit-box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.25);
-    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
-  }
-  
-  .spec {
-    font-size: 11px;
-  }
-  .container{
-    padding: 0px 160px;
+.product-details {
+  padding-right: 32px;
+}
+.product-details a {
+  padding-right: 32px;
+}
+label.radio {
+  cursor: pointer;
+  margin-right: 20px;
 }
 
-#datepicker {
-  color: red;
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  justify-content: center;
+  border: 2px solid #ada9a9;
+  display: flex;
+  border-radius: 4px;
+  width: 90px;
+  height: 40px;
+  padding: 8px;
+  cursor: pointer;
+}
+label.radio img {
+  cursor: pointer;
+}
+
+label.radio input:checked + span {
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn {
+  background-color: #bf6326;
+  color: white;
+  border: 2px solid #bf6326;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #bf6326;
+  border: 2px solid #bf6326;
+}
+
+.payment-info {
+  padding: 12px;
+  border-radius: 20px;
+  color: black;
+  border: 2px solid black;
+}
+.payment-info img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px black;
+}
+.information span {
   font-size: 16px;
 }
 
-/* Tùy chỉnh giao diện khi focus */
-#datepicker:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.information {
+  margin-bottom: 5px;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.container {
+  padding: 0px 160px;
 }
