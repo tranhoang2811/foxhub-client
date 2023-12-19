@@ -3,16 +3,21 @@
 }
 
 .best-for-you-section {
+    font-family: 'Raleway', sans-serif; 
     background-color: white;
-    padding: 24px;
-}
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top:40px;
+    padding-bottom:40px;
 
+}
 .best-for-you-section h2 {
     text-align: center;
     color: #A54C20;
-    font-size: 36px;
-    font-family: Inter;
-    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight:bolder;
+    padding-bottom:20px;
 }
 
 p {
@@ -23,6 +28,7 @@ p {
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
+    font-weight:bolder;
 }
 
 .item-address span {
@@ -33,4 +39,7 @@ p {
 .item-address span i {
     display: flex;
     align-items: center;
+}
+.item-price{
+    font-weight:bolder;
 }
