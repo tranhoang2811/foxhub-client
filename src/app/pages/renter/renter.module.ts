@@ -43,6 +43,7 @@ import { ReviewSectionComponent } from './accommodation-detail/components/review
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
 import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-c
     BlogJourneyComponent,
     BlogExperienceComponent,
     BlogCultureCusineComponent
+    BlogComponent,
   ],
   imports: [
     CommonModule,
