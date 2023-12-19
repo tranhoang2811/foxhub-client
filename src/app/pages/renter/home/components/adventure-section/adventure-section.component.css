@@ -9,10 +9,8 @@ h2 {
     text-align: center;
     color: #406567;
     font-size: 36px;
-    font-family: 'Raleway', sans-serif; 
-    font-weight:bolder;
-    word-wrap: break-word;
-    padding-top:20px;
+    font-weight: bolder;
+    padding-top: 20px;
 }
 
 img {
@@ -23,8 +21,4 @@ img {
 
 .adventure-content {
     gap: 20px !important;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top:40px;
-    padding-bottom:40px;
 }

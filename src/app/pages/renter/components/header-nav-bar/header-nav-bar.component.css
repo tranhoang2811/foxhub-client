@@ -19,7 +19,6 @@
 .navbar-container .nav-link {
     color: #CD5C08;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     vertical-align: middle;
 }
@@ -36,17 +35,11 @@
     color: white;
     background-color: #CD5C08;
     padding: 8px 28px;
-    font-family: 'Raleway', sans-serif;
 }
 
 .navbar-container .btn-group .sign-up {
     background-color: transparent !important;
     padding: 8px 24px;
-    font-family: 'Raleway', sans-serif;
     border: 1px solid#CD5C08;
-    color:#CD5C08
-}
-
-.navbar-container .btn-group .btn:hover {
-    background-color: #CD5C08b8 !important;
+    color: #CD5C08
 }

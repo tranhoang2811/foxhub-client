@@ -18,7 +18,6 @@ header {
 h1 {
     color: white;
     font-size: 80px;
-    font-family: 'Raleway', sans-serif; 
     font-weight: 900;
     text-align: center;
 }
@@ -31,28 +30,31 @@ h1 {
     background-color: #F3ECE6;
     color: #BF6326;
     padding: 8px 36px;
-    border-radius: 30px;
-    font-family: 'Raleway', sans-serif; 
+    border-radius: 28px;
+    font-family: 'Raleway', sans-serif;
 }
+
 .btn-group {
     width: fit-content !important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
     border: none !important;
-    border-radius: 30px !important;
+    border-radius: 28px !important;
     background-color: #F3ECE6;
 }
 
 .filter .btn:active {
     background-color: #CD5C08;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
 }
+
 .filter i {
     display: flex;
     align-items: center;
     color: #BF6326;
     padding: 8px 16px !important;
 }
+
 .filter .vertical-divider {
     height: 100%;
     border: 0.1px solid #406567;

@@ -6,7 +6,6 @@ p {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
-    font-family: 'Raleway', sans-serif; 
     font-weight: bold;
 }
 
@@ -19,6 +18,7 @@ p {
     display: flex;
     align-items: center;
 }
-.item-price{
+
+.item-price {
     font-weight: bold;
 }
