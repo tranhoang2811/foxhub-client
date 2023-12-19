@@ -9,9 +9,8 @@ h2 {
     text-align: center;
     color: #406567;
     font-size: 36px;
-    font-family: Inter;
-    font-weight: 700;
-    word-wrap: break-word
+    font-weight: bolder;
+    padding-top: 20px;
 }
 
 img {
@@ -21,5 +20,5 @@ img {
 }
 
 .adventure-content {
-    gap: 20px !important
+    gap: 20px !important;
 }
