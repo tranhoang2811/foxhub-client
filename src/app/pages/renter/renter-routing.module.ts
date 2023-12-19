@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ReservationHistoryComponent } from './reservation-history/reservation-history.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HomeServiceComponent } from './home-service/home-service.component';
+import { StoryComponent } from './story/story.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'renter/home-service',
     component: HomeServiceComponent,
+  },
+  {
+    path: 'renter/foxhub-story',
+    component: StoryComponent,
   },
 ];
 
