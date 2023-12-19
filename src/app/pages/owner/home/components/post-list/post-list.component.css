@@ -1,0 +1,281 @@
+* {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .contain-cover{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+  }
+  
+  .bar {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ 
+  .bar .search {
+    gap: 20px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .bar .search-bar {
+    width: 480px;
+    border: 1px solid #BF6326;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  
+  .bar .input-search {
+    border: 0px;
+    background-color: transparent;
+    width: calc(100% - 80px);
+    border-style: hidden;
+  }
+  
+.bar .search-icon {
+  width: 10%;
+  height: auto;
+}
+
+  .bar .input-search:focus {
+    outline: none;
+  }
+  
+  .bar .hr-vertical {
+    border: 1px solid #C2C2C2;
+    width: 30px;
+    transform: rotate(90deg);
+    height: 1px;
+    margin: 8px;
+  }
+  
+  
+  .bar .add-post {
+    height: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    background: #C2C2C2;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    padding: 20px 40px;
+  }
+  
+  .bar .add-post:hover {
+    background-color: #CD5C08;
+    color: #FFF;
+  }
+  
+  .box {
+    border-radius: 24px;
+    border: 1.5px solid #CD5C08;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+  }
+  
+  .img-first {
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 300px;
+  }
+  
+  .img-more {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img-second {
+    border-radius: 20px;
+    width: 140px;
+    height: 140px;
+  }
+  
+  .img-overlay{
+    position: relative;
+  }
+  
+  .img-third {
+    border-radius: 20px;
+    filter: blur(2px);
+    width: 140px;
+    height: 140px;
+    display: inline-flex;
+  }
+  
+  .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-flex;
+    color: #FFF;  
+  }
+  
+  
+  .content {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .status {
+    font-weight: bolder;
+    padding: 8px 16px;
+    border-radius: 12px;
+    align-items: center;
+    display: flex;
+    gap: 12px
+  }
+  
+  .status[data-status="Approved"] {
+    /* Approved */
+    background: #DAF6D3;
+  }
+  
+  .status[data-status="Pending"] {
+    /* Pending */
+    background: #FFF0BB;
+  }
+  
+  .status[data-status="Rejected"] {
+    /* Rejected */
+    background: #FFCDCD;
+  }
+  
+  .status[data-status="Banned"] {
+    /* Banned */
+    color: white;
+    background: #8F8F8F;
+  }
+  
+  .renter-name {
+    text-decoration-line: underline;
+    font-style: italic;
+  }
+  
+  
+  .filter {
+    height: fit-content;
+    display: flex;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .filter-btn {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filter-icon {
+    width: 20%;
+    height: auto;
+  }
+  
+  
+  .filter-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: 1;
+    top: 100%;
+    padding: 20px  
+  }
+  
+  .filter-item-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 40px;
+  }
+  
+  .filter-item-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .filter-content label {
+    width: fit-content;
+  }
+  
+  .filter-content .input-checkbox {
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+  }
+  
+  .filter-content .input-checkbox:checked {
+    background-color: black;
+    border: 2px solid black;
+  }
+  
+  
+  .filter:hover .filter-content {
+    top: 100%;
+    display: inline-block;
+  }
+  
+  .filter .status-item {
+    display: flex;
+    padding: 0px 20px;
+    gap: 20px
+  }
+  
+  .filter .item-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+  }
+  
+  .filter .submit-btn {
+    border: 0px;
+    padding: 4px 32px;
+    border-radius: 12px;
+    background-color: #BF6326;
+    color: white;
+  }
+
+  p {
+    margin: 0px;
+  }
