@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditGuestNumberModalComponent } from './components/edit-guest-number-modal/edit-guest-number-modal.component';
 import { EditTimeModalComponent } from './components/edit-time-modal/edit-time-modal.component';
 @Component({
@@ -8,7 +8,10 @@ import { EditTimeModalComponent } from './components/edit-time-modal/edit-time-m
   styleUrls: ['./payment-form.component.css'],
 })
 export class PaymentFormComponent {
-  constructor(private modelService: NgbModal) {}
+  constructor(
+    private modelService: NgbModal,
+    private activeModal: NgbActiveModal
+  ) {}
   public openEditTimeModal(): void {
     const editTimeModal = this.modelService.open(EditTimeModalComponent, {
       centered: true,
@@ -23,5 +26,8 @@ export class PaymentFormComponent {
         modalDialogClass: 'edit-guest-number-modal',
       }
     );
+  }
+  public closeModal(): void {
+    this.activeModal.close();
   }
 }

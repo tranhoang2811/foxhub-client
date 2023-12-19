@@ -1,0 +1,67 @@
+.custom-column {
+  height: 500px;
+}
+.rounded-carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.picsum-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  height: 500px;
+}
+iframe {
+  border-radius: 20px;
+}
+.btn {
+  background-color: #bf6326;
+  color: white;
+  border: 2px solid #bf6326;
+  transition: background-color 0.3s, color 0.3s;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #bf6326;
+  border: 2px solid #bf6326;
+}
+label.radio {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  justify-content: center;
+  border: 2px solid #ada9a9;
+  display: flex;
+  color: black;
+  border-radius: 8px;
+  text-transform: uppercase;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+label.radio input:checked + span {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.show-more {
+  color: #8e8e8e;
+}
+.font-weight-bold {
+  font-weight: bold;
+}

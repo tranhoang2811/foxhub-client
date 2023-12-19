@@ -7,6 +7,7 @@ import { HomeServiceComponent } from './home-service/home-service.component';
 import { StoryComponent } from './story/story.component';
 import { PaymentFormComponent } from './accommodation-detail/components/payment-form/payment-form.component';
 import { ListingComponent } from './listing/listing.component';
+import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
 
 const routes: Routes = [
   {
@@ -35,8 +36,8 @@ const routes: Routes = [
     component: StoryComponent,
   },
   {
-    path: 'renter/accommodation-detail/payment-form',
-    component: PaymentFormComponent,
+    path: 'renter/accommodation/1',
+    component: AccommodationDetailComponent,
   },
   {
     path: 'renter/listing',
