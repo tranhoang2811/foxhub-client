@@ -1,0 +1,60 @@
+<div class="modal-header">
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="modal"
+    (click)="closeModal()"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <h5 class="font-weight-bold">Guest</h5>
+  <p>
+    This property allows a maximum of 5 guests, excluding infants. Pets are not
+    allowed.
+  </p>
+  <h6 class="font-weight-bold">Adult</h6>
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <span>From 13 years old and up</span>
+    <div class="counter-container">
+      <button class="rounded-circle" (click)="decreaseNumberOfAdult()">
+        -
+      </button>
+      <span>{{ numberOfAdult }}</span>
+      <button class="rounded-circle" (click)="increaseNumberOfAdult()">
+        +
+      </button>
+    </div>
+  </div>
+  <h6 class="font-weight-bold">Children</h6>
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <span>Ages 2-12</span>
+    <div class="counter-container">
+      <button class="rounded-circle" (click)="decreaseNumberOfChildren()">
+        -
+      </button>
+      <span>{{ numberOfChildren }}</span>
+      <button class="rounded-circle" (click)="increaseNumberOfChildren()">
+        +
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button
+    type="button"
+    class="close-button btn font-weight-bold btn-outline-dark"
+    data-bs-dismiss="modal"
+    (click)="closeModal()"
+  >
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="save-button btn font-weight-bold"
+    data-bs-dismiss="modal"
+  >
+    Save
+  </button>
+</div>

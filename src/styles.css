@@ -11,3 +11,11 @@ body {
 .log-in-modal {
     max-width: 380px !important;
 }
+
+.edit-time-modal {
+    max-width: 540px !important;
+}
+
+.edit-guest-number-modal {
+    max-width: 440px !important;
+}
