@@ -8,6 +8,7 @@ import {
   NgbDatepickerModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { RenterRoutingModule } from './renter-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -33,7 +34,6 @@ import { StoryComponent } from './story/story.component';
 import { PaymentFormComponent } from './accommodation-detail/components/payment-form/payment-form.component';
 import { EditGuestNumberModalComponent } from './accommodation-detail/components/payment-form/components/edit-guest-number-modal/edit-guest-number-modal.component';
 import { EditTimeModalComponent } from './accommodation-detail/components/payment-form/components/edit-time-modal/edit-time-modal.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -69,7 +69,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbPaginationModule,
     GoogleMapsModule,
     NgbInputDatepicker,
-    NgbDatepickerModule
+    NgbDatepickerModule,
     ReactiveFormsModule,
   ],
 })
