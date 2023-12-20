@@ -44,11 +44,11 @@ export class LogInModalComponent {
     ) as ILoginCredentials;
 
     this.authService.login(loginCredentials).subscribe({
-      next: (token) => {
+      next: (token: string) => {
         this.setToken(token, this.loginForm.value.isRememberMe);
         this.closeModal();
       },
-      error: (error) => {
+      error: (error: Error) => {
         this.errorMessage = error.message;
       },
     });

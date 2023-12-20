@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import omit from 'lodash/omit';
+import { ISignupInformation } from 'src/app/interfaces/auth';
 
 @Component({
   selector: 'app-sign-up-form',
@@ -30,15 +32,18 @@ export class SignUpFormComponent {
 
   public onSubmit(): void {
     this.router.navigate(['/renter/home']);
-    console.log(this.signupForm.value);
-    // this.authService.signup(this.signupForm.value).subscribe({
-    //   next: () => {
+    const signupInformation = omit(this.signupForm.value, [
+      'confirmPassword',
+      'policyAgreement',
+    ]) as ISignupInformation;
 
-    //     this.errorMessage = '';
-    //   },
-    //   error: (error) => {
-    //     this.errorMessage = error.message;
-    //   },
-    // });
+    this.authService.signup(signupInformation).subscribe({
+      next: () => {
+        this.errorMessage = '';
+      },
+      error: (error: Error) => {
+        this.errorMessage = error.message;
+      },
+    });
   }
 }

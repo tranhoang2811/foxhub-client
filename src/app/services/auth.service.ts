@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry } from 'rxjs';
-import { ILoginCredentials, ISignupInformation } from '../interfaces/auth';
-import { ErrorService } from './error.service';
+import { ILoginCredentials, ISignupInformation } from 'src/app/interfaces/auth';
+import { ErrorService } from 'src/app/services/error.service';
 
 @Injectable({
   providedIn: 'root',
