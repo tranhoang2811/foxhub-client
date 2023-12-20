@@ -1,0 +1,201 @@
+.profile-frame {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border: 0.5px solid;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 32px;
+    margin-left: 160px;
+}
+
+.edit-profile, .change-security {
+    padding: 12px;
+}
+
+.edit-profile button {
+    margin-left: 140px;
+}
+
+.change-security button {
+    margin-left: 120px;
+}
+
+hr {
+    width: 240px;
+    margin-left: 80px;
+}
+
+.text-location, .text-occupation {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
+    padding: 12px;
+}
+
+.subtext-location, .subtext-occupation {
+    font-size: 12px;
+    margin-left: 120px;
+}
+
+.member {
+    font-weight: 400;
+    color: #858383;
+    font-size: 12px;
+    text-align: center;
+}
+
+.join-frame {
+    width: 400px;
+    height: 180px;
+    border-radius: 20px;
+    border: 0.5px solid;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.join-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.join-subtest {
+    text-align: center;
+    color: #858383;
+}
+
+.host button{
+    margin-left: 128px;
+}
+
+.about-me {
+    font-weight: bold;
+    font-size: 20px;
+    color: #cd5c08;
+    position: absolute;
+    top: 60px;
+    margin-left: 520px;
+}
+
+.about-me-frame {
+    width: 840px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0.5px solid;
+    position: absolute;
+    top: 100px;
+    margin-left: 520px;
+}
+
+.text-about-me {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.text-about-me button {
+    display: flex;
+    margin-left: 440px;
+}
+
+.review {
+    margin-left: 520px;
+    top: 180px;
+    font-size: 20px;
+    color: #cd5c08;
+    font-weight: bold;
+    position: absolute;
+}
+
+.my-review-title {
+    margin-left: 520px;
+    top: 220px;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+}
+
+.my-review-title button {
+    margin-left: 620px;
+    top: 220px;
+    font-size: 18px;
+}
+
+.review-content {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.avatar-review img {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+
+.comment-name {
+    margin-left: 80px;
+    margin-top: -44px;
+    font-weight: bold;
+}
+
+.star {
+    margin-left: 80px;
+    margin-top: -4px;
+}
+
+.star img {
+    height: 12px;
+}
+
+.first-review {
+    position: absolute;
+    width: 840px;
+    height: 120px;
+    top: 280px;
+    margin-left: 520px;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+
+.second-review {
+    position: absolute;
+    width: 840px;
+    height: 120px;
+    top: 440px;
+    margin-left: 520px;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+
+.third-review {
+    position: absolute;
+    width: 840px;
+    height: 140px;
+    top: 600px;
+    left: 520px;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+
+.fourth-review {
+    position: absolute;
+    width: 840px;
+    height: 160px;
+    top: 780px;
+    left: 520px;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+
+.see-more {
+    margin-left: 920px;
+    margin-top: 140px;
+}
