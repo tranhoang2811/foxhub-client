@@ -5,18 +5,20 @@
   </div>
   <div class="d-flex flex-column align-items-center">
     <h2>Create New Account</h2>
-    <form class="d-flex flex-column justify-content-between flex-grow-1">
+    <form [formGroup]="signupForm" (submit)="onSubmit()" class="d-flex flex-column justify-content-between flex-grow-1">
       <div class="row">
         <div class="col">
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+            <input formControlName="firstName" type="text" class="form-control" id="firstName"
+              placeholder="Enter first name">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+            <input formControlName="lastName" type="text" class="form-control" id="lastName"
+              placeholder="Enter last name">
           </div>
         </div>
       </div>
@@ -24,26 +26,28 @@
         <div class="col">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <input formControlName="email" type="email" class="form-control" id="email" placeholder="Enter email">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+            <input formControlName="phone" type="tel" class="form-control" id="phone" placeholder="Enter phone number">
           </div>
         </div>
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter password">
+        <input formControlName="password" type="password" class="form-control" id="password"
+          placeholder="Enter password">
       </div>
       <div class="form-group">
         <label for="confirm-password">Confirm Password</label>
-        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+        <input formControlName="confirmPassword" type="password" class="form-control" id="confirm-password"
+          placeholder="Confirm password">
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="agree-policy">
+        <input formControlName="policyAgreement" type="checkbox" class="form-check-input" id="agree-policy">
         <label class="form-check-label" for="agree-policy">I agree with policy</label>
       </div>
       <button type="submit" class="btn">Submit</button>
