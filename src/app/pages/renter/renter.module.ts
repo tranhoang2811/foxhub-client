@@ -34,6 +34,7 @@ import { StoryComponent } from './story/story.component';
 import { PaymentFormComponent } from './accommodation-detail/components/payment-form/payment-form.component';
 import { EditGuestNumberModalComponent } from './accommodation-detail/components/payment-form/components/edit-guest-number-modal/edit-guest-number-modal.component';
 import { EditTimeModalComponent } from './accommodation-detail/components/payment-form/components/edit-time-modal/edit-time-modal.component';
+import { ListingComponent } from './listing/listing.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { EditTimeModalComponent } from './accommodation-detail/components/paymen
     PaymentFormComponent,
     EditGuestNumberModalComponent,
     EditTimeModalComponent,
+    ListingComponent,
   ],
   imports: [
     CommonModule,
