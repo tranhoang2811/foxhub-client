@@ -1,0 +1,36 @@
+<app-header-nav-bar></app-header-nav-bar>
+<div class="container">
+    <div class="title-search-result">
+        LISTING
+    </div>
+    <hr>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3" *ngFor="let listing of listings">
+                    <div class="card">
+                        <img class="card-img-top" [src]="listing.imageUrl" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="item-address">{{ listing.address }}</p>
+                            <p class="style-rate">
+                                <span>
+                                    <i class="bi bi-star-fill"></i>
+                                    {{ listing.rate }} ({{ listing.reviews }})
+                                </span>
+                            </p>
+                            <p class="item-owner">Owner: {{ listing.owner }}</p>
+                            <p class="item-price">Price: {{ listing.price }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="col-md-5">
+            <iframe class="style-map" src="https://maps.google.com/maps?q=latitude,longitude&z=15&output=embed">
+            </iframe>
+        </div>
+    </div>
+</div>

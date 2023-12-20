@@ -6,6 +6,7 @@ import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HomeServiceComponent } from './home-service/home-service.component';
 import { StoryComponent } from './story/story.component';
 import { PaymentFormComponent } from './accommodation-detail/components/payment-form/payment-form.component';
+import { ListingComponent } from './listing/listing.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'renter/accommodation-detail/payment-form',
     component: PaymentFormComponent,
+  },
+  {
+    path: 'renter/listing',
+    component: ListingComponent,
   },
 ];
 
