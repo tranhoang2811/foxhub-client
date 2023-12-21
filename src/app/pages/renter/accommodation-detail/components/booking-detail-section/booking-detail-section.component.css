@@ -1,20 +1,20 @@
-.custom-column {
-  height: 500px;
-}
 .rounded-carousel {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .picsum-img-wrapper img {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
   height: 500px;
 }
+
 iframe {
   border-radius: 20px;
 }
-.btn {
+
+.book-button {
   background-color: #bf6326;
   color: white;
   border: 2px solid #bf6326;
@@ -23,11 +23,13 @@ iframe {
   display: flex;
   justify-content: center;
 }
-.btn:hover {
+
+.book-button:hover {
   background-color: #fff;
   color: #bf6326;
   border: 2px solid #bf6326;
 }
+
 label.radio {
   cursor: pointer;
   margin-right: 20px;
@@ -55,13 +57,12 @@ label.radio span {
   font-weight: bold;
 }
 
-label.radio input:checked + span {
+label.radio input:checked+span {
   border: 2px solid black;
   cursor: pointer;
 }
+
 .show-more {
   color: #8e8e8e;
-}
-.font-weight-bold {
-  font-weight: bold;
+  cursor: pointer;
 }
