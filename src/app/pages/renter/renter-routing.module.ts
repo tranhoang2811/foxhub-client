@@ -9,6 +9,7 @@ import { PaymentFormComponent } from './accommodation-detail/components/payment-
 import { ListingComponent } from './listing/listing.component';
 import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
+import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'renter/blog-journey',
     component:  BlogJourneyComponent,
+  },
+  {
+    path: 'renter/blog-experience',
+    component: BlogExperienceComponent,
   },
 ];
 
