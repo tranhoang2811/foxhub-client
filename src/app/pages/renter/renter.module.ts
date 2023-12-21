@@ -42,6 +42,7 @@ import { ChunkPipe } from './accommodation-detail/components/infrastructure-sect
 import { ReviewSectionComponent } from './accommodation-detail/components/review-section/review-section.component';
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
+import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
 
 @NgModule({
   declarations: [
@@ -74,8 +75,8 @@ import { BlogExperienceComponent } from './blog-experience/blog-experience.compo
     ChunkPipe,
     ReviewSectionComponent,
     BlogJourneyComponent,
-    ReviewSectionComponent,
     BlogExperienceComponent,
+    BlogCultureCusineComponent
   ],
   imports: [
     CommonModule,

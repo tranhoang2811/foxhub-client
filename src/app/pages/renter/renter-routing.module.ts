@@ -10,6 +10,7 @@ import { ListingComponent } from './listing/listing.component';
 import { AccommodationDetailComponent } from './accommodation-detail/accommodation-detail.component';
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
+import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'renter/blog-experience',
     component: BlogExperienceComponent,
+  },
+  {
+    path: 'renter/blog-culture-cuisine',
+    component: BlogCultureCusineComponent,
   },
 ];
 
