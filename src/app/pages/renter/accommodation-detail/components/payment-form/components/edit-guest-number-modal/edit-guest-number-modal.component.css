@@ -1,32 +1,42 @@
-button {
-  border-radius: 12px;
+.modal-header {
+  border-bottom: none;
 }
-.font-weight-bold {
-  font-weight: bold;
+
+.modal-body {
+  padding-top: 0
 }
+
+h6 {
+  margin-bottom: 0;
+}
+
 .counter-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.rounded-circle {
-  width: 40px;
-  height: 40px;
-  margin: 0 4px;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: bolder;
-  background-color: #d9d9d9;
+
+.counter {
+  display: flex;
+  align-items: center;
 }
-.counter-container span {
+
+.counter span {
   margin: 0 32px;
   font-weight: bold;
 }
+
+.rounded-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+}
+
 .save-button {
   background-color: #bf6326;
   color: white;
-}
-.modal-footer {
-  display: flex;
-  justify-content: space-between;
 }

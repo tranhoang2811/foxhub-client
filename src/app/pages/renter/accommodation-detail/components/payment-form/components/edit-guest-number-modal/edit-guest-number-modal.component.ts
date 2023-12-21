@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-edit-guest-number-modal',
@@ -7,23 +7,25 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./edit-guest-number-modal.component.css'],
 })
 export class EditGuestNumberModalComponent {
+  public numberOfAdult: number = 0;
+  public numberOfChildren: number = 0;
+
   constructor(private activeModal: NgbActiveModal) {}
-  numberOfAdult = 0;
-  numberOfChildren = 0;
-  public increaseNumberOfAdult() {
+
+  public increaseNumberOfAdult(): void {
     this.numberOfAdult++;
   }
 
-  public decreaseNumberOfAdult() {
+  public decreaseNumberOfAdult(): void {
     if (this.numberOfAdult > 0) {
       this.numberOfAdult--;
     }
   }
-  public increaseNumberOfChildren() {
+  public increaseNumberOfChildren(): void {
     this.numberOfChildren++;
   }
 
-  public decreaseNumberOfChildren() {
+  public decreaseNumberOfChildren(): void {
     if (this.numberOfChildren > 0) {
       this.numberOfChildren--;
     }
