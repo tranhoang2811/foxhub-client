@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./infrastructure-section.component.css'],
 })
 export class InfrastructureSectionComponent {
-  houseItems = [
+  public houseItems = [
     'Kitchen',
     'Private space to work',
     'TV',
@@ -17,5 +17,19 @@ export class InfrastructureSectionComponent {
     'CO Gas Detector',
     'Pets allowed',
     'Smoke detector',
+    'Kitchen',
+    'Private space to work',
+    'TV',
+    'Air conditioning',
+    'Wi-fi',
+    'Free on-site parking',
+    'Washer',
+    'CO Gas Detector',
+    'Pets allowed',
+    'Smoke detector',
+    'Kitchen',
+    'Private space to work',
+    'TV',
+    'Air conditioning',
   ];
 }
