@@ -1,8 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import {
-  NgbAlertModule,
-  NgbDatepickerModule,
   NgbDateStruct,
   NgbCalendar,
   NgbDate,
@@ -15,24 +13,18 @@ import {
   styleUrls: ['./edit-time-modal.component.css'],
 })
 export class EditTimeModalComponent {
-  constructor(private activeModal: NgbActiveModal) {}
-
-  model: NgbDateStruct = {
+  public model: NgbDateStruct = {
     year: new Date().getFullYear(),
     month: new Date().getMonth() + 1,
     day: new Date().getDate(),
   };
+  public hoveredDate: NgbDate | null = null;
+  public fromDate: NgbDate | null = null;
+  public toDate: NgbDate | null = null;
+  public dateParser = inject(NgbDateParserFormatter);
+  private calendar = inject(NgbCalendar);
 
-  calendar = inject(NgbCalendar);
-  formatter = inject(NgbDateParserFormatter);
-
-  hoveredDate: NgbDate | null = null;
-  fromDate: NgbDate | null = this.calendar.getToday();
-  toDate: NgbDate | null = this.calendar.getNext(
-    this.calendar.getToday(),
-    'd',
-    10
-  );
+  constructor(private activeModal: NgbActiveModal) {}
 
   public onDateSelection(date: NgbDate) {
     const currentDate = this.calendar.getToday();
@@ -82,7 +74,7 @@ export class EditTimeModalComponent {
     currentValue: NgbDate | null,
     input: string
   ): NgbDate | null {
-    const parsed = this.formatter.parse(input);
+    const parsed = this.dateParser.parse(input);
     return parsed && this.calendar.isValid(NgbDate.from(parsed))
       ? NgbDate.from(parsed)
       : currentValue;

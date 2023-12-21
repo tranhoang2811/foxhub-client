@@ -35,6 +35,10 @@ import { PaymentFormComponent } from './accommodation-detail/components/payment-
 import { EditGuestNumberModalComponent } from './accommodation-detail/components/payment-form/components/edit-guest-number-modal/edit-guest-number-modal.component';
 import { EditTimeModalComponent } from './accommodation-detail/components/payment-form/components/edit-time-modal/edit-time-modal.component';
 import { ListingComponent } from './listing/listing.component';
+import { BookingDetailSectionComponent } from './accommodation-detail/components/booking-detail-section/booking-detail-section.component';
+import { InfrastructureSectionComponent } from './accommodation-detail/components/infrastructure-section/infrastructure-section.component';
+import { ChunkPipe } from './accommodation-detail/components/infrastructure-section/chunk.pipe';
+import { ReviewSectionComponent } from './accommodation-detail/components/review-section/review-section.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +66,10 @@ import { ListingComponent } from './listing/listing.component';
     EditGuestNumberModalComponent,
     EditTimeModalComponent,
     ListingComponent,
+    BookingDetailSectionComponent,
+    InfrastructureSectionComponent,
+    ChunkPipe,
+    ReviewSectionComponent
   ],
   imports: [
     CommonModule,
