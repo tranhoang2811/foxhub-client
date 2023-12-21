@@ -27,5 +27,5 @@ body {
 }
 
 .payment-form-modal {
-    max-width: 1200px !important;
+    max-width: fit-content !important;
 }
