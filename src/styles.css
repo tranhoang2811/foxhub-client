@@ -19,12 +19,13 @@ body {
 }
 
 .edit-time-modal {
-    max-width: 540px !important;
+    max-width: fit-content !important;
 }
 
 .edit-guest-number-modal {
     max-width: 440px !important;
 }
+
 .payment-form-modal {
     max-width: 1200px !important;
 }
