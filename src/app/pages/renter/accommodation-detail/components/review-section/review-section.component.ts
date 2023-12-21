@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./review-section.component.css'],
 })
 export class ReviewSectionComponent {
-  reviews = [
+  public reviews = [
     {
       avatar: 'https://mdbcdn.b-cdn.net/img/new/avatars/9.webp',
       name: 'Alex',
@@ -26,7 +26,7 @@ export class ReviewSectionComponent {
         'The host arranged a taxi to the airport on the day of check out. I left my mobile phone in the taxi and called the host to help from a friend’s phone. The taxi driver returned to the airport with my phone. It would be disastrous without my phone right in the middle of my trip. I am really grateful to the host for her help. Bless her.',
     },
   ];
-  public getStars(starNumber: string): any[] {
+  public getStars(starNumber: string): number[] {
     const stars = parseInt(starNumber, 10);
     return new Array(stars);
   }
