@@ -53,6 +53,10 @@ h2 {
     color: red
 }
 
+ngb-pagination ::ng-deep ul {
+    margin-bottom: 0px !important;
+}
+
 ngb-pagination ::ng-deep ul>li:not(.active)>a {
     color: #336668 !important
 }
