@@ -1,7 +1,7 @@
 <app-header-nav-bar></app-header-nav-bar>
 <header>
-<h4>Blog</h4>
-<div class="line"></div>
+    <h4>Blog</h4>
+    <div class="line"></div>
     <div class="btn-group filter" role="group">
         <button type="button" class="btn">All</button>
         <button type="button" class="btn">Journey</button>
@@ -10,173 +10,106 @@
     </div>
     <h1>UNLOCK VIETNAM</h1>
     <h5 class="letgo">Let's go...</h5>
-</header>    
+</header>
 
+<div class="blog-container">
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content-between align-items-center">
-            <div class="title-last-news">
-                Lastest New
-            </div>
-            <button class="button-post">Post</button>
-        </div>
+    <div class="heading">
+        <div class="heading-title">Lastest New</div>
+        <button class="heading-btn">Post</button>
     </div>
-</div>
 
-
-
-
-<div class="container mt-5">
-    <div class="row d-flex align-items-stretch">
-        <div class="col-md-6 flex-fill">
-            <div class="card">
-                <img src="assets/images/part-four-of-last-new.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="author">Olivia Rhye • 1 Jan 2023</p>
-                    <h4 class="card-title-last-new">The Top 11 Things to Do in Sapa, Vietnam</h4>
-                    <p class="card-text-main-last-new">Sapa, situated in the northern part of Vietnam, is renowned for its captivating landscapes, cultural diversity, and unique experiences. This charming destination beckons travelers with a myriad of attractions...See More</p>
-                    <div class="tag-travel">
-                    <button type="button" class="btn btn-primary">
-                        #Travel Website
-                      </button>
-                    </div>
+    <div class="top-container">
+        <div class="top-left-box">
+            <div class="img-center-holder">
+                <img src="assets/mock/blog/sapa.jpg" alt="" class="img-center">
+            </div>
+            <div class="content">
+                <div class="author">
+                    Olivia Rhye • 1 Jan 2023
+                </div>
+                <div class="top-left-title">The Top 11 Things to Do in Sapa, Vietnam</div>
+                <div>
+                    Sapa, situated in the northern part of Vietnam, is renowned for its captivating landscapes, cultural
+                    diversity, and unique experiences. This charming destination beckons travelers with a myriad of
+                    attractions...See More
+                </div>
+                <div class="card-tag-container">
+                    <div class="card-tag-box" data-status="Design">Design</div>
+                    <div class="card-tag-box" data-status="Research">Research</div>
+                    <div class="card-tag-box" data-status="Presentation">Design</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 flex-fill">
-            <div class="card flex-row">
-                <div class="card-img-left">
-                    <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg" alt="Card image cap">
+        <div class="top-right-container">
+            <div class="top-right-box" *ngFor="let card of cards">
+                <div>
+                    <img class="top-right-img" [src]="card.image" alt="Card image cap">
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                    <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                        ancient capital symbol during the light show night by artists ... See More</p>
-                </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-3">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-one-of-last-new.jpg" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Vietnam in the top 22 best cuisines in the world</h5>
-                        <p class="card-text">Vietnam ranks 22nd in the list of 100 best cuisines in the world voted by
-                            culinary experts, chefs and international guests.
-
-                            On December 13, Taste Atlas released its list of 100 Best Cuisines ... See More</p>
+                <div class="top-right-content">
+                    <div class="author" style="font-size: 14px;">{{ card.author }} • {{card.date}}</div>
+                    <div class="top-right-title">{{ card.title }}</div>
+                    <div>{{ card.text }}... See More</div>
+                    <div class="card-tag-container">
+                        <div class="card-tag-box" *ngFor="let tag of card.tags" [attr.data-status]="tag">
+                            {{ tag }}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-3">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-two-of-last-new.jpg" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Hanoi, Ho Chi Minh City in the top 100 cities in the world 2023</h5>
-                        <p class="card-text">Boats full of fruit and vegetables head to Cai Rang floating market. Read
-                            more
-                            about Cai Rang Floating Market.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
-</div>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card flex-row">
-                <div class="card-img-center">
-                    <img class="hanoi" src="assets/images/part-center.jpg" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Da Nang International Terminal is certified to welcome Chinese passengers
-                    </h5>
-                    <p class="card-text">Da Nang International Terminal (Terminal T2) is rated Gold - the highest of the
-                        3 Silk, Jade, Gold grades of the Welcome Chinese certificate of China Tourism Academy, a
-                        Beijing-based research organization, established in 2008, under the National Tourism
-                        Administration of China.
 
-                        Da Nang International Terminal is the first in Southeast Asia to be granted the above
-                        certification. There are 11 criteria Danang International Terminal has met according to Welcome
-                        Chinese certification. The first is that the signage inside and outside the station is written
-                        in Chinese, in addition to Vietnamese, English, Korean.</p>
-                </div>
+    <div class="middle-container">
+        <div class="middle-img-holder">
+            <img src="assets/mock/blog/danang-terminal.jpg" alt="" class="middle-img">
+        </div>
+        <div class="middle-content">
+            <div class="author">
+                Olivia Rhye • 1 Jan 2023
+            </div>
+            <div class="middle-title">Da Nang International Terminal is certified to welcome Chinese passengers</div>
+            <div>Da Nang International Terminal (Terminal T2) is rated Gold - the highest of the 3 Silk, Jade, Gold
+                grades of the Welcome Chinese certificate of China Tourism Academy, a Beijing-based research
+                organization, established in 2008, under the National Tourism Administration of China. Da Nang
+                International Terminal is the first in Southeast Asia to be granted the above certification. There are
+                11 criteria Danang International Terminal has met according to Welcome Chinese certification. The first
+                is that the signage inside and outside the station is written in Chinese, in addition to Vietnamese,
+                English, Korean.
+            </div>
+            <div class="card-tag-container">
+                <div class="card-tag-box" data-status="Design">Design</div>
+                <div class="card-tag-box" data-status="Research">Research</div>
+                <div class="card-tag-box" data-status="Presentation">Design</div>
             </div>
         </div>
-
     </div>
 
-</div>
 
+    <div class="bottom-container">
+        <div class="bottom-box" style="width: 64%;">
 
-<div class="container mt-5">
-    <div class="row d-flex ">
-        <div class="col-md-8 ">
-            <div class="card flex-row ">
-                <div class="card-img-left">
-                    <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg" alt="Card image cap">
+            <div class="bottom-left-box" *ngFor="let popular of populars">
+                <div class="bottom-left-img-holder">
+                    <img [src]="popular.image" alt="" class="bottom-left-img">
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                    <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                        ancient capital symbol during the light show night by artists ... See More</p>
-                </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-5">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg"
-                            alt="Card image cap">
+                <div class="top-right-content" >
+                    <div class="top-right-title">{{popular.title}} </div>
+                    <div class="bottom-left-horizontal">
+                        <span class="text-bold" style="text-decoration: underline;">Post</span>
+                        <span class="text-sub">By</span>
+                        <span class="post-author"><b>{{popular.author}}</b></span>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                        <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                            ancient capital symbol during the light show night by artists ... See More</p>
+                    <div class="bottom-left-horizontal">
+                        <span class="text-sub">10 Nov, 2023</span>
+                        <hr class="bottom-left-hr">
+                        <span class="text-cmt">50 comment</span>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-5">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg"
-                            alt="Card image cap">
+                    <div class="text-sub">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed et donec purus viverra. Sit
+                        justo velit, eu sed sollicitudin tempus,
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                        <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                            ancient capital symbol during the light show night by artists ... See More</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-5">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                        <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                            ancient capital symbol during the light show night by artists ... See More</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card flex-row mt-5">
-                    <div class="card-img-left">
-                        <img class="img-of-last-new" src="assets/images/part-three-of last-new.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">10,000 people admire the shimmering Ngo Mon in the night</h5>
-                        <p class="card-text">More than 10,000 people flocked to Ngo Mon Square to admire the sparkling
-                            ancient capital symbol during the light show night by artists ... See More</p>
-                    </div>
+                    <div class="text-bold">READ MORE...</div>
                 </div>
             </div>
             <div class="pagination-container">
@@ -195,130 +128,74 @@
                     </ul>
                 </nav>
             </div>
+            
+
         </div>
-        <div class="col-md-4 ">
-            <div class="popular-post">
-                <h3 class="title-popular-post">Popular Post</h3>
-                <div class="row">
-                    <div class="col-md-3 ">
-                        <img class="img-of-under" src="assets/images/cairang-market.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-md-9 ">
-                        <h5 class="card-title-under">Cai Rang Floating Market - Mekong Delta, Vietnam</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mt-2 ">
-                        <img class="img-of-under" src="assets/images/cairang-market.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-md-9 mt-2">
-                        <h5 class="card-title-under">Cai Rang Floating Market - Mekong Delta, Vietnam</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mt-2 ">
-                        <img class="img-of-under" src="assets/images/cairang-market.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-md-9 mt-2">
-                        <h5 class="card-title-under">Cai Rang Floating Market - Mekong Delta, Vietnam</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mt-2 ">
-                        <img class="img-of-under" src="assets/images/cairang-market.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-md-9 mt-2 ">
-                        <h5 class="card-title-under">Cai Rang Floating Market - Mekong Delta, Vietnam</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mt-2">
-                        <img class="img-of-under" src="assets/images/cairang-market.jpg" alt="Card image cap">
-                    </div>
-                    <div class="col-md-9 mt-2 ">
-                        <h6 class="card-title-under">Cai Rang Floating Market - Mekong Delta, Vietnam</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="follow">
-                <h3 class="title"> Follow FoxHub</h3>
-                <ul class="social-icons">
-                    <li><a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                    <li><a href="#" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a></li>
-                </ul>
-            </div>
-            <div>
-                <form>
-                    <h3 class="title-subscribre">Subscribe today</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed et donec purus viverra. Sit justo
-                    </p>
 
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp">
-                        <div id="nameHelp" class="form-text">Enter your full name.</div>
+        <div class="bottom-box"  style="flex: 1;">
+
+            <div class="bottom-right-box">
+                <div class="title-bold">Popular Post</div>
+                <div class="popular-box" *ngFor="let popular of populars">
+                    <div class="popular-img-holder">
+                        <img [src]="popular.image" alt="" class="popular-img">
                     </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Your Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">You agree to our company privacy
-                            policy</label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-            </div>
-            <div class="container-tag">
-                <div class="row">
-                    <h3 class="title-tag">Tags</h3>
-                    <div class="col-md-4">
-
-                        <div>
-                            <p>Travel Website</p>
-                            <p>Travel Website</p>
-                            <p>Travel Website</p>
-                            <p>Travel Website</p>
-                            <p>Travel Website</p>
-                            <p>Travel Website</p>
+                    <div>
+                        <div class="top-right-title" style="font-size: 16px">{{popular.title}}</div>
+                        <div class="bottom-left-horizontal" style="font-size: 12px;">
+                            <span class="text-bold" style="text-decoration: underline;">Post</span>
+                            <span class="text-sub">By</span>
+                            <span class="post-author"><b>Adam Smith</b></span>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div>
-                            <p>Travel Tips</p>
-                            <p>Travel Tips</p>
-                            <p>Travel Tips</p>
-                            <p>Travel Tips</p>
-                            <p>Travel Tips</p>
-                            <p>Travel Tips</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div>
-                            <p>Travel Trick</p>
-                            <p>Travel Trick</p>
-                            <p>Travel Trick</p>
-                            <p>Travel Trick</p>
-                            <p>Travel Trick</p>
-                            <p>Travel Trick</p>
+                        <div class="bottom-left-horizontal" style="font-size: 12px;">
+                            <span class="text-sub">10 Nov, 2023</span>
+                            <hr class="bottom-left-hr">
+                            <span class="text-cmt">50 comment</span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="bottom-right-box">
+                <div class="title-bold">Follow FoxHub</div>
+                <div class="icon-group">
+                    <a href="https://www.facebook.com/foxhubvn" class="icon-frame">
+                        <img src="assets/icons/facebook-vector.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/foxhub.vn/" class="icon-frame">
+                        <img src="assets/icons/instagram-vector.png" alt="">
+                    </a>
+                    <a href="#" class="icon-frame">
+                        <img src="assets/icons/youtube-vector.png" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bottom-box-form">
+                <div class="title-bold">Subscribe Today</div>
+                <div>Let's subscribe to receive important information and discounts from our platform.</div>
+                
+                    <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    <div class="checkbox-holder">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            You agree to our company privacy policy
+                        </label>
+                    </div>
+                    <button type="button" class="form-btn" onclick="subscribe()">
+                        SUBSCRIBE
+                    </button>
+                
+            </div>
+            
+
         </div>
     </div>
+
 </div>
+
+
 <script>
     function moveSlider(index) {
         const navLinks = document.querySelectorAll('.nav-link');
@@ -329,5 +206,13 @@
         });
 
         activeLink.classList.add('active');
+    }
+</script>
+
+<script>
+    function subscribe() {
+        alert("Subscribed successfully");
+        document.getElementById('fullname').value = '';
+        document.getElementById('email').value = '';
     }
 </script>

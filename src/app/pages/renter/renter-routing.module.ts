@@ -13,6 +13,7 @@ import { BlogExperienceComponent } from './blog-experience/blog-experience.compo
 import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
 import { BlogComponent } from './blog/blog.component';
 
+
 const routes: Routes = [
   {
     path: '',
