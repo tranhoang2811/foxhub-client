@@ -41,6 +41,7 @@ h2 {
 
 .map {
     border-radius: 20px;
+    max-width: 40%;
 }
 
 .pagination-container {
@@ -58,4 +59,8 @@ ngb-pagination ::ng-deep ul>li:not(.active)>a {
 
 ngb-pagination ::ng-deep ul>li.active>a {
     background-color: #336668 !important
+}
+
+ngb-pagination ::ng-deep .page-link:focus {
+    box-shadow: none !important
 }
