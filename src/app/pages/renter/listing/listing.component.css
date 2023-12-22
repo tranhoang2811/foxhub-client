@@ -12,6 +12,12 @@ h2 {
     padding: 12px;
 }
 
+.card .thumbnail {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
 .item-address {
     font-size: 14px;
     font-weight: bold;
@@ -35,6 +41,7 @@ h2 {
 
 .map {
     border-radius: 20px;
+    max-width: 40%;
 }
 
 .pagination-container {
@@ -46,12 +53,18 @@ h2 {
     color: red
 }
 
+ngb-pagination ::ng-deep ul {
+    margin-bottom: 0px !important;
+}
+
 ngb-pagination ::ng-deep ul>li:not(.active)>a {
     color: #336668 !important
 }
 
-
-
 ngb-pagination ::ng-deep ul>li.active>a {
     background-color: #336668 !important
+}
+
+ngb-pagination ::ng-deep .page-link:focus {
+    box-shadow: none !important
 }
