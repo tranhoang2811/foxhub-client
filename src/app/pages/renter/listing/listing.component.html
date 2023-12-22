@@ -7,17 +7,18 @@
         <div class="accommodation-list">
             <div class="container-fluid px-0">
                 <div class="row row-cols-3 g-3">
-                    <div class="col" *ngFor="let listing of listings">
+                    <div class="col" *ngFor="let accommodation of accommodations">
                         <div class="card">
-                            <img class="thumbnail" [src]="listing.imageUrl" alt="Card image cap">
+                            <img class="thumbnail" [src]="accommodation.imageUrl" alt="Card image cap">
                             <div class="card-content">
-                                <p class="item-address">{{ listing.address }}</p>
+                                <p class="item-address">{{ getAccommodationCity(accommodation.latitude,
+                                    accommodation.longitude) }}</p>
                                 <span class="item-rate">
                                     <i class="bi bi-star-fill"></i>
-                                    {{ listing.rate }} ({{ listing.reviews }})
+                                    {{ roundRating(accommodation.averageRating) }} ({{ accommodation.totalRating }})
                                 </span>
-                                <p class="item-owner">Owner: {{ listing.owner }}</p>
-                                <p class="item-price">Price: {{ listing.price }}</p>
+                                <p class="item-owner">Owner: {{ accommodation.ownerName}}</p>
+                                <p class="item-price">Price: ${{ accommodation.price }}/day</p>
                             </div>
                         </div>
                     </div>

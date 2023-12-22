@@ -12,6 +12,12 @@ h2 {
     padding: 12px;
 }
 
+.card .thumbnail {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
 .item-address {
     font-size: 14px;
     font-weight: bold;
@@ -49,8 +55,6 @@ h2 {
 ngb-pagination ::ng-deep ul>li:not(.active)>a {
     color: #336668 !important
 }
-
-
 
 ngb-pagination ::ng-deep ul>li.active>a {
     background-color: #336668 !important
