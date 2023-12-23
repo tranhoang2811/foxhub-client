@@ -1,0 +1,48 @@
+form {
+    margin-top: 40px;
+  }
+  
+  .form-group {
+    margin-left: 360px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    height: 36px;
+    width: 600px;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 8px;
+  }
+  
+  .form-check {
+    margin-left: 420px;
+    margin-top: 8px;
+  }
+  
+  .btn-primary {
+    margin-left: 420px;
+    margin-top: 12px;
+  }
+  
+  hr {
+    width: 660px;
+    margin-top: 16px;
+    margin-left: 360px;
+  }
+  
+  .policy-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 620px;
+  }
+  
+  .policy-content {
+    width: 700px;
+    top: 200px;
+    text-align: justify;
+    line-height: 30px;
+    margin: 20px 0px 0px 320px;
+  }
+  
