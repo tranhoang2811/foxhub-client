@@ -1,8 +1,10 @@
 header {
   min-height: 600px;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(255, 255, 255, 0.3),
-      rgba(205, 92, 8, 0.1)),
+      rgba(205, 92, 8, 0.1)
+    ),
     url(src/assets/images/header-blog.png);
   background-position: center center;
   background-size: cover;
@@ -18,86 +20,68 @@ header {
 h4 {
   color: white;
   font-size: 32px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bolder;
   text-align: center;
-  color: #CD5C08;
+  color: #cd5c08;
   position: relative;
   padding-top: 32px;
-  text-shadow: 2px 2px 4px #888888
+  text-shadow: 2px 2px 4px #888888;
 }
 
 .line {
   width: 400px;
   height: 10px;
-  background-color: #CD5C08;
-  box-sizing: content-box;
-  overflow: visible;
+  background-color: #cd5c08;
   box-shadow: 2px 2px 4px #888888;
   position: relative;
   bottom: 40px;
 }
 
-.filter {
-  margin-bottom: 40px;
-}
-
-.filter .btn {
-  background-color: #F3ECE6;
-  color: #CD5C08;
-  padding: 8px 36px;
-  border-radius: 30px;
-  font-family: 'Raleway', sans-serif;
-}
-
 .btn-group {
-  width: fit-content !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-  border: none !important;
-  border-radius: 30px !important;
-  background-color: #F3ECE6;
+  margin-bottom: 40px;
+  width: fit-content;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 30px;
+  background-color: #f3ece6;
   position: relative;
   bottom: 60px;
 }
 
-.filter .btn:focus {
-  background-color: #CD5C08;
+.btn-group .btn {
+  background-color: #f3ece6;
+  color: #cd5c08;
+  padding: 8px 36px;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-group .btn:focus {
+  background-color: #cd5c08;
   color: white;
   border: none;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-.filter i {
-  display: flex;
-  align-items: center;
-  color: #BF6326;
-  padding: 8px 16px !important;
-}
-
-.filter .vertical-divider {
-  height: 100%;
-  border: 0.1px solid #406567;
-}
-
 h1 {
   color: white;
   font-size: 96px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   text-align: center;
-  color: #CD5C08;
+  color: #cd5c08;
   position: relative;
   bottom: 80px;
 }
 
-.letgo {
+h5 {
   color: #336668;
   font-size: 36px;
   font-weight: bold;
   position: relative;
   bottom: 120px;
 }
-
 
 .blog-container {
   margin: 40px 120px;
@@ -115,11 +99,11 @@ h1 {
 .heading-title {
   font-size: 36px;
   font-weight: bold;
-  color: #CD5C08;
+  color: #cd5c08;
 }
 
 .heading-btn {
-  background-color: #CD5C08;
+  background-color: #cd5c08;
   color: white;
   font-size: 18px;
   border: 0px;
@@ -127,7 +111,6 @@ h1 {
   width: 160px;
   height: 40px;
 }
-
 
 .top-container {
   display: inline-flex;
@@ -137,15 +120,10 @@ h1 {
   width: 100%;
 }
 
-.top-left-box{
+.top-left-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.img-center-holder {
-  width: 100%;
-  overflow: hidden;
 }
 
 .img-center {
@@ -154,15 +132,16 @@ h1 {
   width: 100%;
 }
 
-.content{ 
+.content {
   display: flex;
   flex-direction: column;
   padding: 0px 20px 10px;
   gap: 15px;
 }
 
-.author{
-  color:#CD5C08;
+.author {
+  color: #cd5c08;
+  font-size: 14px;
 }
 
 .top-left-title {
@@ -170,65 +149,54 @@ h1 {
   font-size: 26px;
 }
 
-
 .card-tag-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   gap: 15px;
 }
 
-.card-tag-box{
-  width: fit-content;
+.card-tag-box {
   border-radius: 20px;
   padding: 5px 20px;
 }
 
 .card-tag-box[data-status="Design"] {
-  background: #F9F5FF;
-  color: #CD5C08;
+  background: #f9f5ff;
+  color: #cd5c08;
 }
 
 .card-tag-box[data-status="Research"] {
-  background: #EEF4FF;
-  color: #3538CD;
+  background: #eef4ff;
+  color: #3538cd;
 }
 
 .card-tag-box[data-status="Presentation"] {
-  background: #FDF2FA;
-  color: #C11574;
+  background: #fdf2fa;
+  color: #c11574;
 }
 
-
 .top-right-container {
-  width: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .top-right-box {
-  display: flex; 
-  justify-content: flex-start;
+  display: flex;
   gap: 20px;
 }
 
-
 .top-right-img {
-  display: inline-block;
-  position: relative;
   width: 280px;
   height: max-content;
   overflow: hidden;
 }
 
-.top-right-content{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   font-size: 15px;
+.top-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
 }
 .top-right-title {
   font-weight: bold;
@@ -240,7 +208,7 @@ h1 {
   flex-direction: row;
   gap: 20px;
 }
-.middle-img-holder{
+.middle-img-holder {
   width: 40%;
   height: max-content;
   overflow: hidden;
@@ -271,7 +239,8 @@ h1 {
 .bottom-box {
   display: flex;
   flex-direction: column;
-  gap: 40px
+  gap: 40px;
+  width: 64%;
 }
 
 .bottom-left-box {
@@ -280,7 +249,7 @@ h1 {
   gap: 20px;
 }
 
-.bottom-left-img-holder{
+.bottom-left-img-holder {
   overflow: hidden;
   border-radius: 10px;
   width: 60%;
@@ -290,12 +259,13 @@ h1 {
 .bottom-left-img {
   width: 100%;
   height: 220px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-.text-bold{
+.text-bold {
   font-weight: bold;
-  color: #CD5C08;
+  color: #cd5c08;
+  text-decoration: underline;
 }
 
 .text-sub {
@@ -306,25 +276,25 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px
+  gap: 10px;
+  font-size: 12px;
 }
 
 .bottom-left-hr {
   width: 40px;
 }
 
-.text-cmt{
-  color:#CD5C08
+.text-cmt {
+  color: #cd5c08;
 }
 
-
-.bottom-right-box{
+.bottom-right-box {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 1px 10px 0px #696969;
   border-radius: 10px;
   gap: 12px;
-  padding: 20px
+  padding: 20px;
 }
 
 .title-bold {
@@ -337,7 +307,7 @@ h1 {
   flex-direction: row;
   gap: 10px;
 }
-.popular-img-holder{
+.popular-img-holder {
   height: fit-content;
 }
 
@@ -346,10 +316,8 @@ h1 {
   width: 120px;
   border-radius: 6px;
   overflow: hidden;
-  object-fit:cover;
+  object-fit: cover;
 }
-
-
 
 .icon-group {
   display: flex;
@@ -370,7 +338,7 @@ h1 {
 }
 
 .icon-frame:hover {
-  background-color: #CD5C08;
+  background-color: #cd5c08;
 }
 
 .bottom-box-form {
@@ -380,7 +348,7 @@ h1 {
   border-radius: 10px;
   gap: 12px;
   padding: 20px;
-  background-color: #CD5C08;
+  background-color: #cd5c08;
   color: white;
 }
 
@@ -392,13 +360,12 @@ form {
 
 .checkbox-holder {
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
-
 
 .form-btn {
   background-color: white;
-  color:#CD5C08;
+  color: #cd5c08;
   font-size: 18px;
   font-weight: 600;
   padding: 10px;
@@ -407,7 +374,7 @@ form {
 }
 
 .pagination-container {
-  color: #CD5C08;
+  color: #cd5c08;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,8 +386,5 @@ form {
 }
 
 .page-link:hover {
-  color: #CD5C08 !important;
+  color: #cd5c08 !important;
 }
-
-
-
