@@ -31,7 +31,6 @@ export class SignUpFormComponent {
   }
 
   public onSubmit(): void {
-    this.router.navigate(['/renter/home']);
     const signupInformation = omit(this.signupForm.value, [
       'confirmPassword',
       'policyAgreement',
@@ -40,6 +39,7 @@ export class SignUpFormComponent {
     this.authService.signup(signupInformation).subscribe({
       next: () => {
         this.errorMessage = '';
+        this.router.navigate(['/renter/home']);
       },
       error: (error: Error) => {
         this.errorMessage = error.message;

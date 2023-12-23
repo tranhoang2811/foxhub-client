@@ -6,6 +6,7 @@ import {
   NgbPaginationModule,
   NgbInputDatepicker,
   NgbDatepickerModule,
+  NgbPopoverModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -69,7 +70,7 @@ import { ReviewSectionComponent } from './accommodation-detail/components/review
     BookingDetailSectionComponent,
     InfrastructureSectionComponent,
     ChunkPipe,
-    ReviewSectionComponent
+    ReviewSectionComponent,
   ],
   imports: [
     CommonModule,
@@ -80,6 +81,7 @@ import { ReviewSectionComponent } from './accommodation-detail/components/review
     GoogleMapsModule,
     NgbInputDatepicker,
     NgbDatepickerModule,
+    NgbPopoverModule,
     ReactiveFormsModule,
   ],
 })

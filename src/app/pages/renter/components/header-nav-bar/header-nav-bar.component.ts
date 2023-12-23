@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LogInModalComponent } from '../../home/components/log-in-modal/log-in-modal.component';
 import { SignUpModalComponent } from '../../home/components/sign-up-modal/sign-up-modal.component';
+import { IUser } from 'src/app/interfaces/user';
+import { AuthService } from 'src/app/services/auth.service';
+import { ActivatedRoute } from '@angular/router';
+import { FileService } from 'src/app/services/file.service';
 
 @Component({
   selector: 'app-header-nav-bar',
@@ -9,7 +13,22 @@ import { SignUpModalComponent } from '../../home/components/sign-up-modal/sign-u
   styleUrls: ['./header-nav-bar.component.css'],
 })
 export class HeaderNavBarComponent {
-  constructor(private modelService: NgbModal) {}
+  public isLoggedIn: boolean = false;
+  public userProfile: IUser | null = null;
+  public avatar: string = '';
+  public currentTab: string = '';
+
+  constructor(
+    private modelService: NgbModal,
+    private activatedRoute: ActivatedRoute,
+    private authService: AuthService,
+    private fileService: FileService
+  ) {}
+
+  ngOnInit(): void {
+    this.getUserProfile();
+    this.getTabName();
+  }
 
   public openLogInModal(): void {
     const logInModal = this.modelService.open(LogInModalComponent, {
@@ -19,6 +38,9 @@ export class HeaderNavBarComponent {
     logInModal.componentInstance.onOpenSignupModal.subscribe(() => {
       logInModal.close();
       this.openSignUpModal();
+    });
+    logInModal.componentInstance.onLogin.subscribe(() => {
+      this.getUserProfile();
     });
   }
 
@@ -30,6 +52,35 @@ export class HeaderNavBarComponent {
     signUpModal.componentInstance.onOpenLogInModal.subscribe(() => {
       signUpModal.close();
       this.openLogInModal();
+    });
+  }
+
+  public onAvatarError(): void {
+    const firstLetter = this.userProfile?.lastName?.charAt(0).toUpperCase();
+    this.avatar = `https://via.placeholder.com/40?text=${firstLetter}`;
+  }
+
+  private getTabName(): void {
+    this.activatedRoute.url.subscribe((url) => {
+      this.currentTab = url[1].path;
+    });
+  }
+
+  private getUserProfile(): void {
+    this.authService.getUserProfile().subscribe({
+      next: (userProfile: IUser) => {
+        this.userProfile = userProfile;
+        this.getAvatarUrl(userProfile.avatar || '');
+        this.isLoggedIn = true;
+      },
+    });
+  }
+
+  public getAvatarUrl(fileName: string): void {
+    this.fileService.getAvatarUrl(fileName).subscribe({
+      next: (url: string) => {
+        this.avatar = url;
+      },
     });
   }
 }

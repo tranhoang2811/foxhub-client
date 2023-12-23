@@ -1,15 +1,36 @@
 <div class="navbar-container">
-    <a [routerLink]="['/renter/home']">
-        <img src="assets/images/logo.jpg">
-    </a>
-    <nav class="nav">
-        <a class="nav-link" href="#">FoxHub’s Story</a>
-        <a class="nav-link" href="#">Reservation</a>
-        <a class="nav-link" href="#">Home Service</a>
-        <a class="nav-link" href="#">Blog</a>
-    </nav>
-    <div class="btn-group" role="group" aria-label="Basic example">
+    <div class="d-flex align-items-center gap-5">
+        <a [routerLink]="['/renter/home']">
+            <img src="assets/images/logo.jpg">
+        </a>
+        <span>
+            <nav class="nav">
+                <a class="nav-link" [routerLink]="['/renter/foxhub-story']"
+                    [class.activated-tab]="currentTab==='foxhub-story'">FoxHub’s Story</a>
+                <a class="nav-link" [routerLink]="['/renter/reservation-history']"
+                    [class.activated-tab]="currentTab==='reservation-history'">Reservation</a>
+                <a class="nav-link" [routerLink]="['/renter/home-service']"
+                    [class.activated-tab]="currentTab==='home-service'">Home Service</a>
+                <a class="nav-link" [routerLink]="['/renter/blog']" [class.activated-tab]="currentTab==='blog'">Blog</a>
+            </nav>
+        </span>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example" *ngIf="!isLoggedIn">
         <button type="button" class="btn log-in" (click)="openLogInModal()">Login</button>
         <button type="button" class="btn sign-up" (click)="openSignUpModal()">Sign up</button>
     </div>
+    <button class="avatar" [ngbPopover]="popOver" *ngIf="isLoggedIn">
+        <img class="rounded-circle" [src]="avatar" (error)="onAvatarError()" alt="User Avatar" width="40px"
+            height="40px">
+    </button>
+    <ng-template #popOver>
+        <div class="d-flex flex-column setting-option">
+            <button class="btn">
+                Profile
+            </button>
+            <button class="btn">
+                Logout
+            </button>
+        </div>
+    </ng-template>
 </div>
