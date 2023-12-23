@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, retry } from 'rxjs';
+import { catchError, map, Observable, retry } from 'rxjs';
 import { ILoginCredentials, ISignupInformation } from 'src/app/interfaces/auth';
 import { ErrorService } from 'src/app/services/error.service';
+import { IUser } from '../interfaces/user';
 
 @Injectable({
   providedIn: 'root',
@@ -15,13 +16,21 @@ export class AuthService {
 
   public login(credentials: ILoginCredentials): Observable<string> {
     return this.httpClient
-      .post<string>('/auth/login', credentials)
+      .post('/auth/login', credentials, {
+        responseType: 'text',
+      })
       .pipe(retry(2), catchError(this.errorService.handleError));
   }
 
   public signup(signupInformation: ISignupInformation): Observable<void> {
     return this.httpClient
       .post<void>('/auth/signup', signupInformation)
+      .pipe(retry(2), catchError(this.errorService.handleError));
+  }
+
+  public getUserProfile(): Observable<IUser> {
+    return this.httpClient
+      .get<IUser>('/auth/profile')
       .pipe(retry(2), catchError(this.errorService.handleError));
   }
 }

@@ -10,4 +10,5 @@ export interface IUser {
   occupation: string;
   status: EUserStatus;
   role: EUserRole;
+  avatar?: string;
 }

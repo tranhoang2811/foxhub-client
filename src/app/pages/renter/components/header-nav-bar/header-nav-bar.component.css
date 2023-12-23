@@ -43,3 +43,21 @@
     border: 1px solid#CD5C08;
     color: #CD5C08
 }
+
+.avatar {
+    background-color: transparent;
+    border: 0;
+}
+
+.avatar img {
+    border: none;
+}
+
+.setting-option button:hover {
+    background-color: gray;
+}
+
+.activated-tab {
+    background-color: #dfa686;
+    border-radius: 4px;
+}

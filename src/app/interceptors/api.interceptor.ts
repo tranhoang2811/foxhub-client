@@ -12,13 +12,24 @@ import { environment } from 'src/environments/environment';
 export class ApiInterceptor implements HttpInterceptor {
   constructor() {}
 
-  // TODO: Add auth token later
   intercept(
     request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
+    const isRememberMe = JSON.parse(
+      localStorage.getItem('isRememberMe') || 'false'
+    );
+    const token = isRememberMe
+      ? localStorage.getItem('token')
+      : sessionStorage.getItem('token');
+
     const httpRequest = request.clone({
       url: `${environment.apiUrl}${request.url}`,
+      setHeaders: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
     });
     return next.handle(httpRequest);
   }

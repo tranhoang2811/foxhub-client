@@ -12,10 +12,10 @@ import { ILoginCredentials } from 'src/app/interfaces/auth';
 })
 export class LogInModalComponent {
   @Output() public onOpenSignupModal = new EventEmitter<void>();
+  @Output() public onLogin = new EventEmitter<void>();
 
   public loginForm: FormGroup;
   public errorMessage: string = '';
-  private token: string = '';
 
   constructor(
     private activeModal: NgbActiveModal,
@@ -43,23 +43,28 @@ export class LogInModalComponent {
       'isRememberMe'
     ) as ILoginCredentials;
 
-    this.authService.login(loginCredentials).subscribe({
-      next: (token: string) => {
-        this.setToken(token, this.loginForm.value.isRememberMe);
-        this.closeModal();
-      },
-      error: (error: Error) => {
-        this.errorMessage = error.message;
-      },
-    });
+    this.authService
+      .login(loginCredentials)
+      .subscribe({
+        next: (token: string) => {
+          this.setToken(token, this.loginForm.value.isRememberMe);
+          this.closeModal();
+        },
+        error: (error: Error) => {
+          this.errorMessage = error.message;
+        },
+      })
+      .add(() => {
+        this.onLogin.emit();
+      });
   }
 
   private setToken(token: string, isRememberMe: boolean): void {
-    this.token = token;
-    if (this.loginForm.value.isRememberMe) {
-      localStorage.setItem('token', this.token);
+    if (isRememberMe) {
+      localStorage.setItem('token', token);
     } else {
-      sessionStorage.setItem('token', this.token);
+      sessionStorage.setItem('token', token);
     }
+    localStorage.setItem('isRememberMe', String(isRememberMe));
   }
 }
