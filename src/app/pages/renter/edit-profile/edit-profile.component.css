@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.image-container img {
+  margin-left: 780px;
+}
+
+.save-avatar input {
+  align-items: center;
+}
+
+.section {
+  padding: 16px;
+  margin-left: 280px;
+}
+
+input,
+select {
+  background-color: rgb(229, 227, 227);
+  border: none;
+}
+
+.container {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.firstname {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 40px;
+}
+
+.lastname {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 40px;
+}
+
+.phone {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 72px;
+}
+
+.email {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 76px;
+}
+
+.dateofbirth {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 72px;
+}
+
+.container select {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 40px;
+}
+
+.occupation {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 28px;
+}
+
+.nationality {
+  height: 36px;
+  width: 800px;
+  border-radius: 8px;
+  margin-left: 32px;
+}
+
+.cancel {
+  height: 32px;
+  width: 100px;
+  border-radius: 8px;
+  margin-left: 700px;
+  margin-top: 20px;
+  background-color: rgb(210, 210, 210);
+  border: none;
+}
+
+.cancel:hover {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.save {
+  height: 32px;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: gray;
+  font-weight: bold;
+}
+
+.save:hover {
+  background-color: #cd5c08;
+  color: white;
+  border: none;
+}
