@@ -30,6 +30,12 @@
   width: 20px;
   height: 20px;
 }
+.accommodation-table tbody tr:nth-child(even) {
+  background-color: #f0efef;
+}
+.accommodation-table tbody tr:nth-child(odd) {
+  background-color: white;
+}
 .table-container::-webkit-scrollbar {
   display: none;
 }
@@ -60,7 +66,7 @@
   justify-content: center;
   border-radius: 8px;
 }
-.status-reject {
+.status-rejected {
   background-color: #ffcdcd;
   padding: 4px;
   text-align: center;

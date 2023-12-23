@@ -14,18 +14,15 @@
       <tr *ngFor="let accommodation of accommodations">
         <td>{{ accommodation.id }}</td>
         <td>{{ accommodation.ownerName }}</td>
-        <td>{{ accommodation.address }}</td>
-        <td>{{ accommodation.dateApply }}</td>
+        <td>{{ accommodation.ownerName }}</td>
+        <td>{{ accommodation.ownerName }}</td>
         <td>
           <div [ngClass]="getStatusClass(accommodation.status)">
             {{ accommodation.status }}
           </div>
         </td>
         <td>
-          <img
-            src="assets/icons/edit.png"
-            alt="edit-icon"
-          />
+          <img src="assets/icons/edit.png" alt="edit-icon" />
         </td>
       </tr>
     </tbody>
