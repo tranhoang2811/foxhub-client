@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-blog-culture-cusine',
   templateUrl: './blog-culture-cusine.component.html',
-  styleUrls: ['./blog-culture-cusine.component.css']
+  styleUrls: ['./blog-culture-cusine.component.css'],
 })
 export class BlogCultureCusineComponent {
   cards = [
@@ -62,5 +62,4 @@ export class BlogCultureCusineComponent {
       author: 'David Wilson',
     },
   ];
-
 }
