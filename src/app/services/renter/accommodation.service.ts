@@ -2,7 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry } from 'rxjs';
 import { EUserRole } from 'src/app/enums/user';
-import { IAccommodation } from 'src/app/interfaces/accommodation';
+import {
+  IAccommodation,
+  IAccommodationWithRelations,
+} from 'src/app/interfaces/accommodation';
 import { IPaginatedAccommodation } from 'src/app/interfaces/api/renter/accommodation';
 import { IPaginationList } from 'src/app/interfaces/common';
 import { IFilter } from 'src/app/interfaces/query';
@@ -26,6 +29,14 @@ export class AccommodationService {
 
     return this.httpClient
       .get<IPaginationList<IPaginatedAccommodation>>(url)
+      .pipe(retry(2), catchError(this.errorService.handleError));
+  }
+
+  public getDetail(id: string): Observable<IAccommodationWithRelations> {
+    const url = `/${EUserRole.RENTER}/accommodations/${id}`;
+
+    return this.httpClient
+      .get<IAccommodationWithRelations>(url)
       .pipe(retry(2), catchError(this.errorService.handleError));
   }
 }

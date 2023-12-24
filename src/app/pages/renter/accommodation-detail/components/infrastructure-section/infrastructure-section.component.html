@@ -3,7 +3,7 @@
   <div class="row mb-2">
     <div class="col-7">
       <div class="d-flex gap-4 flex-wrap">
-        <ul *ngFor=" let group of houseItems | chunk : 4">
+        <ul *ngFor=" let group of infrastructureSectionData?.amenities ?? [] | chunk : 4">
           <li *ngFor="let item of group">
             {{ item }}
           </li>
@@ -37,5 +37,4 @@
     </p>
   </div>
 </div>
-<h5 class="mt-4 show-detail">Show detail</h5>
 <hr />

@@ -61,8 +61,3 @@ label.radio input:checked+span {
   border: 2px solid black;
   cursor: pointer;
 }
-
-.show-more {
-  color: #8e8e8e;
-  cursor: pointer;
-}
