@@ -31,9 +31,11 @@ h4 {
   width: 400px;
   height: 10px;
   background-color: #cd5c08;
+  box-sizing: content-box;
+  overflow: visible;
   box-shadow: 2px 2px 4px #888888;
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
 }
 
 .btn-group {
