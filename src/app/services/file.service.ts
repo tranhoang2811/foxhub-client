@@ -22,7 +22,10 @@ export class FileService {
   }
 
   public getAvatarUrl(fileName: string): Observable<string> {
-    const storageReference: StorageReference = ref(this.storage, fileName);
+    const storageReference: StorageReference = ref(
+      this.storage,
+      `images/${fileName}`
+    );
     return from(getDownloadURL(storageReference));
   }
 }
