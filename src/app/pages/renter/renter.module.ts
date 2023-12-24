@@ -10,7 +10,6 @@ import {
   NgbPopoverModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { RenterRoutingModule } from './renter-routing.module';
 import { HomeComponent } from './home/home.component';

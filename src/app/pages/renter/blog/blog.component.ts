@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent {
-  cards = [
+  public cards = [
     {
       author: 'Olivia Rhye',
       date: '1 Jan 2023',
