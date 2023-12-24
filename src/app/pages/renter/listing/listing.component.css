@@ -1,0 +1,70 @@
+h2 {
+    color: #CD5C08;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accommodation-list {
+    max-width: 64%;
+}
+
+.card {
+    padding: 12px;
+}
+
+.card .thumbnail {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.item-address {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.item-owner {
+    font-size: 14px;
+    margin: 0px
+}
+
+.item-price {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.item-rate {
+    margin: 0px;
+}
+
+.map {
+    border-radius: 20px;
+    max-width: 40%;
+}
+
+.pagination-container {
+    height: fit-content;
+    margin-top: 12px;
+}
+
+.pagination-container li {
+    color: red
+}
+
+ngb-pagination ::ng-deep ul {
+    margin-bottom: 0px !important;
+}
+
+ngb-pagination ::ng-deep ul>li:not(.active)>a {
+    color: #336668 !important
+}
+
+ngb-pagination ::ng-deep ul>li.active>a {
+    background-color: #336668 !important
+}
+
+ngb-pagination ::ng-deep .page-link:focus {
+    box-shadow: none !important
+}

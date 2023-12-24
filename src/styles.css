@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 html,
 body {
     height: 100%;
+}
+
+body {
+    font-family: Raleway, sans-serif;
 }
 
 .sign-up-modal {
@@ -10,4 +16,16 @@ body {
 
 .log-in-modal {
     max-width: 380px !important;
+}
+
+.edit-time-modal {
+    max-width: fit-content !important;
+}
+
+.edit-guest-number-modal {
+    max-width: 440px !important;
+}
+
+.payment-form-modal {
+    max-width: fit-content !important;
 }

@@ -1,0 +1,149 @@
+header {
+  min-height: 600px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("src/assets/images/header-blog-journey.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  color: #336668;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.line {
+  width: 400px;
+  height: 10px;
+  background-color: #336668;
+  box-sizing: content-box;
+  overflow: visible;
+  box-shadow: 2px 2px 4px #888888;
+  position: relative;
+  bottom: 60px;
+}
+
+.filter {
+  margin-bottom: 60px;
+}
+
+.filter .btn {
+  background-color: #f3ece6;
+  color: #336668;
+  padding: 8px 36px;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-group {
+  width: fit-content !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  background-color: #f3ece6;
+  position: relative;
+  bottom: 80px;
+}
+
+.filter .btn:focus {
+  background-color: #336668;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.filter i {
+  display: flex;
+  align-items: center;
+  color: #336668;
+  padding: 8px 16px !important;
+}
+
+.filter .vertical-divider {
+  height: 100%;
+  border: 0.1px solid #406567;
+}
+
+h1 {
+  color: white;
+  font-size: 96px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #336668;
+  position: relative;
+  bottom: 160px;
+}
+.style-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+  margin-left: 120px;
+}
+.button-post {
+  background-color: #336668;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 80px;
+}
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+.card-title {
+  height: 50px;
+}
+.card-text {
+  height: 180px;
+}
+.card-body span {
+  margin-right: 8px;
+}
+span.solo-travel {
+  text-decoration: underline;
+  color: #406567;
+}
+span.by-author {
+  color: #696969;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.pagination-container {
+  height: fit-content;
+  margin-top: 36px;
+}
+
+.pagination-container li {
+  color: red;
+}
+
+ngb-pagination ::ng-deep ul > li:not(.active) > a {
+  color: #336668 !important;
+}
+
+ngb-pagination ::ng-deep ul > li.active > a {
+  background-color: #336668 !important;
+}

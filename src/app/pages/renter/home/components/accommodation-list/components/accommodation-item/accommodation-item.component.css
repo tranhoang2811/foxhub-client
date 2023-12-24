@@ -6,6 +6,7 @@ p {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .item-address span {
@@ -16,4 +17,8 @@ p {
 .item-address span i {
     display: flex;
     align-items: center;
+}
+
+.item-price {
+    font-weight: bold;
 }

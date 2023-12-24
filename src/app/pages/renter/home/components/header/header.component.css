@@ -17,8 +17,7 @@ header {
 
 h1 {
     color: white;
-    font-size: 60px;
-    font-family: Inter;
+    font-size: 80px;
     font-weight: 900;
     text-align: center;
 }
@@ -28,13 +27,25 @@ h1 {
 }
 
 .filter .btn {
-    background-color: white;
+    background-color: #F3ECE6;
     color: #BF6326;
     padding: 8px 36px;
+    border-radius: 28px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.filter .btn:hover {
-    background-color: rgba(255, 255, 255, 0.629);
+.btn-group {
+    width: fit-content !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+    border-radius: 28px !important;
+    background-color: #F3ECE6;
+}
+
+.filter .btn:active {
+    background-color: #CD5C08;
+    color: white;
+    border: none;
 }
 
 .filter i {

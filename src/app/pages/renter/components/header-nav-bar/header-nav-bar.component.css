@@ -17,9 +17,8 @@
 }
 
 .navbar-container .nav-link {
-    color: #BF6326;
+    color: #CD5C08;
     font-size: 16px;
-    font-family: Inter;
     font-weight: 700;
     vertical-align: middle;
 }
@@ -34,15 +33,37 @@
 
 .navbar-container .btn-group .log-in {
     color: white;
-    background-color: #BF6326;
+    background-color: #CD5C08;
     padding: 8px 28px;
+}
+
+.navbar-container .action-group {
+    width: 220px;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-container .btn-group .sign-up {
     background-color: transparent !important;
     padding: 8px 24px;
+    border: 1px solid#CD5C08;
+    color: #CD5C08
 }
 
-.navbar-container .btn-group .btn:hover {
-    background-color: #bf6326b8 !important;
+.avatar {
+    background-color: transparent;
+    border: 0;
+}
+
+.avatar img {
+    border: none;
+}
+
+.setting-option button:hover {
+    background-color: gray;
+}
+
+.activated-tab {
+    background-color: #dfa686;
+    border-radius: 4px;
 }

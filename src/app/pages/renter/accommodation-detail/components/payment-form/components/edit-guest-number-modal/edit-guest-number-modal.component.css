@@ -1,0 +1,42 @@
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding-top: 0
+}
+
+h6 {
+  margin-bottom: 0;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.counter span {
+  margin: 0 32px;
+  font-weight: bold;
+}
+
+.rounded-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+}
+
+.save-button {
+  background-color: #bf6326;
+  color: white;
+}

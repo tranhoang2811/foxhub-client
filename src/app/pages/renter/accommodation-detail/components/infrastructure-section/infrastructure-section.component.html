@@ -1,0 +1,40 @@
+<div>
+  <h3 class="fw-bold">What this place has for you</h3>
+  <div class="row mb-2">
+    <div class="col-7">
+      <div class="d-flex gap-4 flex-wrap">
+        <ul *ngFor=" let group of infrastructureSectionData?.amenities ?? [] | chunk : 4">
+          <li *ngFor="let item of group">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<h3 class="mb-3 fw-bold">Good to know</h3>
+<div class="row mb-2">
+  <div class="col-2">
+    <h5 class="mb-3 fw-bold">House rules</h5>
+    <p>Check-in: 14:00 - 22:00</p>
+    <p>Check-out is before 12:00</p>
+  </div>
+  <div class="col-4">
+    <h5 class="mb-3 fw-bold">Safety and Shelter</h5>
+    <p>There is no information yet on whether there is a CO detector</p>
+    <p>There is no information yet on whether there are smoke detectors</p>
+    <p>Security Cameras/Recording Devices</p>
+  </div>
+  <div class="col-6">
+    <h5 class="mb-3 fw-bold">Cancellation Policy</h5>
+    <p>
+      A partial refund will be issued if canceled prior to check-in at Dec 2
+    </p>
+    <p>
+      Read the full cancellation policy of the Host/Host that applies even if
+      you cancel due to illness
+    </p>
+  </div>
+</div>
+<hr />

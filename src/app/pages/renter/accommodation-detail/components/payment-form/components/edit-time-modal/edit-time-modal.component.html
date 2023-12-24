@@ -1,0 +1,37 @@
+<div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeModal()"></button>
+</div>
+
+<div class="modal-body">
+  <div class="d-flex justify-content-between selected-time-range">
+    <div class="check-in">
+      <p class="date-title">Check in</p>
+      <p>{{dateParser.format(fromDate) || 'YYYY-MM-DD'}}</p>
+    </div>
+    <div class="check-out">
+      <p class="date-title">Check out</p>
+      <p>{{dateParser.format(toDate) || 'YYYY-MM-DD'}}</p>
+    </div>
+  </div>
+
+  <ngb-datepicker #dp (dateSelect)="onDateSelection($event)" [dayTemplate]="datePickerTemplate" outsideDays="hidden"
+    [displayMonths]="2" />
+
+  <ng-template #datePickerTemplate let-date let-focused="focused">
+    <span class="custom-day" [class.focused]="focused" [class.range]="isRange(date)"
+      [class.faded]="isHovered(date) || isInside(date)" (mouseenter)="hoveredDate = date"
+      (mouseleave)="hoveredDate = null">
+      {{ date.day }}
+    </span>
+  </ng-template>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="close-button btn fw-bold btn-outline-dark" data-bs-dismiss="modal"
+    (click)="deleteDate()">
+    Delete Date
+  </button>
+  <button type="button" class="save-button btn fw-bold" data-bs-dismiss="modal">
+    Save
+  </button>
+</div>

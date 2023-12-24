@@ -10,9 +10,7 @@
 a {
     width: 100%;
     text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 28px;
-    font-family: Inter;
-    font-weight: 400;
+    text-decoration: underline;
+    color: rgb(159, 159, 159);
+    font-size: 24px;
 }
