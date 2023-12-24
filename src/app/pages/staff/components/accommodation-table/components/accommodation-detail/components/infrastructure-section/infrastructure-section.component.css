@@ -1,0 +1,9 @@
+.back-button {
+  background-color: white;
+  color: black;
+  border: 2px solid #bf6326;
+  transition: background-color 0.3s, color 0.3s;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+}

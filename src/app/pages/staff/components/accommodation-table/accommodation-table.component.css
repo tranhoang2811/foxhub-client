@@ -1,3 +1,25 @@
+.search-container {
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: #fff;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 12px;
+  border-radius: 40px;
+}
+
+input.form-control {
+  border: none;
+  border-radius: 0;
+  border-radius: 40px;
+}
+.button-search {
+  background-color: #bf6326;
+  color: white;
+  border: 1px solid #bf6326;
+}
+
 .table-container {
   padding-left: 12px;
   padding-right: 12px;
@@ -5,7 +27,7 @@
   border-radius: 20px;
   margin: 20px;
   width: 1200px; /*TODO: Adjust to fit the user's screen?*/
-  max-height: 290px; /*TODO: Adjust to fit the user's screen?*/
+  max-height: 590px; /*TODO: Adjust to fit the user's screen?*/
   overflow-y: scroll;
 }
 .accommodation-table {

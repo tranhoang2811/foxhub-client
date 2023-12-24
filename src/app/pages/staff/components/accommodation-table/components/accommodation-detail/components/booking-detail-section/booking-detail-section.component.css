@@ -1,0 +1,77 @@
+.rounded-carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.picsum-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  height: 500px;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.book-button {
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-button:hover {
+  background-color: #fff;
+  color: #bf6326;
+  border: 2px solid #bf6326;
+}
+
+label.radio {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  justify-content: center;
+  border: 2px solid #ada9a9;
+  display: flex;
+  color: black;
+  border-radius: 8px;
+  text-transform: uppercase;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+label.radio input:checked + span {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.status-pending {
+  background-color: #fff0bb;
+  border: 2px solid #fff0bb;
+}
+.status-approved {
+  background-color: #daf6d3;
+  border: 2px solid #daf6d3;
+}
+.status-banned {
+  background-color: #8f8f8f;
+  border: 2px solid #8f8f8f;
+}
+.status-rejected {
+  background-color: #ffcdcd;
+  border: 2px solid #ffcdcd;
+}

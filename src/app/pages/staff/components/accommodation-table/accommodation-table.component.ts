@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IPaginatedAccommodation } from 'src/app/interfaces/api/renter/accommodation';
 import { IPaginationList } from 'src/app/interfaces/common';
 import { AccommodationService } from 'src/app/services/staff/accommodation.service';
-
+import { IdFilterPipe } from './id-filter.pipe';
 @Component({
   selector: 'app-accommodation-table',
   templateUrl: './accommodation-table.component.html',
@@ -29,10 +29,6 @@ export class AccommodationTableComponent {
     });
   }
 
-  public getAccommodationCity(latitude: number, longitude: number): string {
-    return `${latitude}, ${longitude}`;
-  }
-
   public getStatusClass(status: string): string {
     switch (status.toLowerCase()) {
       case 'pending':
@@ -47,4 +43,6 @@ export class AccommodationTableComponent {
         return '';
     }
   }
+  searchTerm: string = '';
+  applyFilter() {}
 }
