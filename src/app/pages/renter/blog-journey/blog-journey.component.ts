@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-blog-journey',
   templateUrl: './blog-journey.component.html',
-  styleUrls: ['./blog-journey.component.css']
+  styleUrls: ['./blog-journey.component.css'],
 })
 export class BlogJourneyComponent {
   cards = [
@@ -62,6 +62,4 @@ export class BlogJourneyComponent {
       author: 'David Wilson',
     },
   ];
-
-
 }
