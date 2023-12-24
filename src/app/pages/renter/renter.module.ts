@@ -77,7 +77,7 @@ import { BlogComponent } from './blog/blog.component';
     ReviewSectionComponent,
     BlogJourneyComponent,
     BlogExperienceComponent,
-    BlogCultureCusineComponent
+    BlogCultureCusineComponent,
     BlogComponent,
   ],
   imports: [
