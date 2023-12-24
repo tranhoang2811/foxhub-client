@@ -9,6 +9,9 @@ import { BookingDetailSectionComponent } from './components/accommodation-table/
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { IdFilterPipe } from './components/accommodation-table/id-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
+
 @NgModule({
   declarations: [
     AccommodationTableComponent,
@@ -17,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     ChunkPipe,
     BookingDetailSectionComponent,
     IdFilterPipe,
+    SidebarComponent
   ],
   imports: [StaffRoutingModule, CommonModule, NgbCarouselModule, FormsModule],
 })
