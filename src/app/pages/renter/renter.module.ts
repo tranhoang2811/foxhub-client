@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import {
   NgbCarouselModule,
   NgbModalModule,
@@ -9,7 +10,6 @@ import {
   NgbPopoverModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { RenterRoutingModule } from './renter-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -43,6 +43,7 @@ import { ReviewSectionComponent } from './accommodation-detail/components/review
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
 import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -76,9 +77,11 @@ import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-c
     ReviewSectionComponent,
     BlogJourneyComponent,
     BlogExperienceComponent,
-    BlogCultureCusineComponent
+    BlogCultureCusineComponent,
+    BlogComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     CommonModule,
     RenterRoutingModule,
     NgbCarouselModule,

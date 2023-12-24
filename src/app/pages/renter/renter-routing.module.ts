@@ -11,6 +11,8 @@ import { AccommodationDetailComponent } from './accommodation-detail/accommodati
 import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 import { BlogExperienceComponent } from './blog-experience/blog-experience.component';
 import { BlogCultureCusineComponent } from './blog-culture-cusine/blog-culture-cusine.component';
+import { BlogComponent } from './blog/blog.component';
+
 
 const routes: Routes = [
   {
@@ -57,6 +59,10 @@ const routes: Routes = [
   {
     path: 'renter/blog-culture-cuisine',
     component: BlogCultureCusineComponent,
+  },
+  {
+    path: 'renter/blog',
+    component: BlogComponent,
   },
 ];
 
