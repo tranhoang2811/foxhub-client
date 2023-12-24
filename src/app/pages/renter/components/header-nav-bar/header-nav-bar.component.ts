@@ -56,8 +56,8 @@ export class HeaderNavBarComponent {
   }
 
   public onAvatarError(): void {
-    const firstLetter = this.userProfile?.lastName?.charAt(0).toUpperCase();
-    this.avatar = `https://via.placeholder.com/40?text=${firstLetter}`;
+    const url = `https://ui-avatars.com/api/?name=${this.userProfile?.lastName}&background=random&rounded=true&color=fff`;
+    this.avatar = url;
   }
 
   private getTabName(): void {

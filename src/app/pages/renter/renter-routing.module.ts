@@ -36,7 +36,7 @@ const routes: Routes = [
     component: StoryComponent,
   },
   {
-    path: 'renter/accommodation/1',
+    path: 'renter/accommodation/:id',
     component: AccommodationDetailComponent,
   },
   {

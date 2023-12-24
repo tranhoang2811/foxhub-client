@@ -1,12 +1,12 @@
 <h3 class="mb-3 fw-bold">
-  Quynh's entire home-right in the heart of Can Tho
+  {{bookingDetailSectionData?.title}}
 </h3>
 <div class="row mb-3">
   <div class="col-7">
     <ngb-carousel class="rounded-carousel">
-      <ng-template ngbSlide *ngFor="let image of images">
+      <ng-template ngbSlide *ngFor="let source of bookingDetailSectionData?.sources">
         <div class="picsum-img-wrapper">
-          <img [src]="image" alt="Random first slide" />
+          <img [src]="source" />
         </div>
       </ng-template>
     </ngb-carousel>
@@ -21,18 +21,14 @@
   <div class="col-7">
     <div>
       <p>
-        We warmly welcome our guests with enthusiasm and genuine hospitality.The
-        homestay offers convenience, fully furnished amenities, tranquility, and
-        is located right in the city center, just a 5-minute walk from Ninh Kieu
-        Pier, a must-visit destination in Can Tho. Close to the night market and
-        authentic local restaurants offering specialties from the Mekong Delta.
+        {{bookingDetailSectionData?.description}}
       </p>
-      <h5 class="mb-4 show-more">Show more</h5>
     </div>
     <div>
       <h3 class="mb-3 fw-bold">Code Room</h3>
       <div class="d-flex flex-wrap gap-3">
-        <button class="btn btn-outline-secondary" *ngFor="let room of rooms">{{ room }}</button>
+        <button class="btn btn-outline-secondary" *ngFor="let room of bookingDetailSectionData?.rooms ">{{ room.code
+          }}</button>
       </div>
     </div>
   </div>

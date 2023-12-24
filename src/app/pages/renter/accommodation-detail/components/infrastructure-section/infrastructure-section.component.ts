@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IInfrastructureSectionData } from '../interface';
 
 @Component({
   selector: 'app-infrastructure-section',
@@ -6,30 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./infrastructure-section.component.css'],
 })
 export class InfrastructureSectionComponent {
-  public houseItems = [
-    'Kitchen',
-    'Private space to work',
-    'TV',
-    'Air conditioning',
-    'Wi-fi',
-    'Free on-site parking',
-    'Washer',
-    'CO Gas Detector',
-    'Pets allowed',
-    'Smoke detector',
-    'Kitchen',
-    'Private space to work',
-    'TV',
-    'Air conditioning',
-    'Wi-fi',
-    'Free on-site parking',
-    'Washer',
-    'CO Gas Detector',
-    'Pets allowed',
-    'Smoke detector',
-    'Kitchen',
-    'Private space to work',
-    'TV',
-    'Air conditioning',
-  ];
+  @Input() infrastructureSectionData: IInfrastructureSectionData | undefined;
 }

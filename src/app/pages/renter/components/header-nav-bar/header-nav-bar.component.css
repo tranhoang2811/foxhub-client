@@ -37,6 +37,12 @@
     padding: 8px 28px;
 }
 
+.navbar-container .action-group {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+}
+
 .navbar-container .btn-group .sign-up {
     background-color: transparent !important;
     padding: 8px 24px;
