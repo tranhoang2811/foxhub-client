@@ -62,4 +62,5 @@ export class BlogCultureCusineComponent {
       author: 'David Wilson',
     },
   ];
+currentTab: any;
 }

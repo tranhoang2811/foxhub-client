@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-journey.component.css'],
 })
 export class BlogJourneyComponent {
+  public currentTab: string = '';
   cards = [
     {
       cardImage:

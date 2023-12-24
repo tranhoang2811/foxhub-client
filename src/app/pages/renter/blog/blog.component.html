@@ -3,10 +3,21 @@
   <h4>Blog</h4>
   <div class="line"></div>
   <div class="btn-group" role="group">
-    <button type="button" class="btn">All</button>
-    <button type="button" class="btn">Journey</button>
-    <button type="button" class="btn">Experience</button>
-    <button type="button" class="btn">Culture and Cuisine</button>
+    <a [routerLink]="['/renter/blog/all']" [class.activated-tab]="currentTab === 'all'">
+      <button type="button" class="btn">All</button>
+    </a>
+
+    <a [routerLink]="['/renter/blog/journey']" [class.activated-tab]="currentTab === 'journey'">
+      <button type="button" class="btn">Journey</button>
+    </a>
+
+    <a [routerLink]="['/renter/blog/experience']" [class.activated-tab]="currentTab === 'experience'">
+      <button type="button" class="btn">Experience</button>
+    </a>
+
+    <a [routerLink]="['/renter/blog/culture-cuisine']" [class.activated-tab]="currentTab === 'culture-cuisine'">
+      <button type="button" class="btn">Culture and Cuisine</button>
+    </a>
   </div>
   <h1>UNLOCK VIETNAM</h1>
   <h5>Let's go...</h5>
