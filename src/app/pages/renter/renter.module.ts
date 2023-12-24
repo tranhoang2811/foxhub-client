@@ -73,9 +73,9 @@ import { BlogExperienceComponent } from './blog-experience/blog-experience.compo
     InfrastructureSectionComponent,
     ChunkPipe,
     ReviewSectionComponent,
-    BlogJourneyComponent
+    BlogJourneyComponent,
     ReviewSectionComponent,
-    BlogExperienceComponent
+    BlogExperienceComponent,
   ],
   imports: [
     CommonModule,
