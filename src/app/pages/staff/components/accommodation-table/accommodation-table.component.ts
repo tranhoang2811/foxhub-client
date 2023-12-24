@@ -1,45 +1,33 @@
 import { Component } from '@angular/core';
-
+import { IPaginatedAccommodation } from 'src/app/interfaces/api/renter/accommodation';
+import { IPaginationList } from 'src/app/interfaces/common';
+import { AccommodationService } from 'src/app/services/staff/accommodation.service';
+import { IdFilterPipe } from './id-filter.pipe';
 @Component({
   selector: 'app-accommodation-table',
   templateUrl: './accommodation-table.component.html',
   styleUrls: ['./accommodation-table.component.css'],
 })
 export class AccommodationTableComponent {
-  accommodations = [
-    {
-      id: 'FH030903',
-      ownerName: 'My Dinh Ngoc Tra',
-      address: '215/1, Dong Da, A District Chau Doc City, An Giang Province',
-      dateApply: '10/11/2023',
-      status: 'Pending',
-      otherValue: '6',
-    },
-    {
-      id: 'FH030903',
-      ownerName: 'My Dinh Ngoc Tra',
-      address: '215/1, Dong Da, A District Chau Doc City, An Giang Province',
-      dateApply: '10/11/2023',
-      status: 'Approved',
-      otherValue: '6',
-    },
-    {
-      id: 'FH030903',
-      ownerName: 'My Dinh Ngoc Tra',
-      address: '215/1, Dong Da, A District Chau Doc City, An Giang Province',
-      dateApply: '10/11/2023',
-      status: 'Banned',
-      otherValue: '6',
-    },
-    {
-      id: 'FH030903',
-      ownerName: 'My Dinh Ngoc Tra',
-      address: '215/1, Dong Da, A District Chau Doc City, An Giang Province',
-      dateApply: '10/11/2023',
-      status: 'Reject',
-      otherValue: '6',
-    },
-  ];
+  public accommodations: IPaginatedAccommodation[] = [];
+  public errorMessage: string = '';
+
+  constructor(private accommodationService: AccommodationService) {
+    this.paginateAccommodationList();
+  }
+
+  private paginateAccommodationList(): void {
+    const filter = {};
+
+    this.accommodationService.paginate(filter).subscribe({
+      next: (response: IPaginationList<IPaginatedAccommodation>) => {
+        this.accommodations = response.list;
+      },
+      error: (error) => {
+        this.errorMessage = error.message;
+      },
+    });
+  }
 
   public getStatusClass(status: string): string {
     switch (status.toLowerCase()) {
@@ -49,10 +37,12 @@ export class AccommodationTableComponent {
         return 'status-approved';
       case 'banned':
         return 'status-banned';
-      case 'reject':
-        return 'status-reject';
+      case 'rejected':
+        return 'status-rejected';
       default:
         return '';
     }
   }
+  searchTerm: string = '';
+  applyFilter() {}
 }
