@@ -81,6 +81,17 @@ export class HeaderNavBarComponent {
       next: (url: string) => {
         this.avatar = url;
       },
+      error: () => {
+        this.onAvatarError();
+      },
     });
+  }
+
+  public logOut(): void {
+    localStorage.removeItem('token');
+    localStorage.removeItem('isRememberMe');
+    sessionStorage.removeItem('token');
+    this.userProfile = null;
+    this.isLoggedIn = false;
   }
 }
