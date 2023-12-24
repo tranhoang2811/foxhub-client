@@ -40,6 +40,7 @@ import { BookingDetailSectionComponent } from './accommodation-detail/components
 import { InfrastructureSectionComponent } from './accommodation-detail/components/infrastructure-section/infrastructure-section.component';
 import { ChunkPipe } from './accommodation-detail/components/infrastructure-section/chunk.pipe';
 import { ReviewSectionComponent } from './accommodation-detail/components/review-section/review-section.component';
+import { BlogJourneyComponent } from './blog-journey/blog-journey.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { ReviewSectionComponent } from './accommodation-detail/components/review
     InfrastructureSectionComponent,
     ChunkPipe,
     ReviewSectionComponent,
+    BlogJourneyComponent
   ],
   imports: [
     CommonModule,

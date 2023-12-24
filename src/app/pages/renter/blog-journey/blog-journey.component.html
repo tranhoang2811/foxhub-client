@@ -1,0 +1,44 @@
+<app-header-nav-bar></app-header-nav-bar>
+<header>
+  <h4>Blog</h4>
+  <div class="line"></div>
+  <div class="btn-group filter" role="group">
+    <button type="button" class="btn">All</button>
+    <button type="button" class="btn">Journey</button>
+    <button type="button" class="btn">Experience</button>
+    <button type="button" class="btn">Culture and Cuisine</button>
+  </div>
+  <h1>JOURNEY</h1>
+</header>
+<div class="style-title">
+  <h4 class="title">JOURNEY</h4>
+  <button class="button-post">Post</button>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 mt-4" *ngFor="let cardItem of cards">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="{{ cardItem.cardImage }}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ cardItem.cardTitle }}</h5>
+          <p class="card-text">{{ cardItem.cardText }}</p>
+          <span class="solo-travel">{{ cardItem.cardLabel }}</span>
+          <span class="by-author">By</span>
+          <span class="font-weight-bold">{{ cardItem.author }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center pagination-container">
+    <ngb-pagination
+      [collectionSize]="70"
+      [page]="4"
+      size="sm"
+      [ellipses]="true"
+    />
+  </div>
+</div>
