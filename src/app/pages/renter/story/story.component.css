@@ -1,4 +1,5 @@
 .title {
+    font-family: "Raleway", sans-serif;
     color: #bf6326;
     font-weight: bold;
     font-size: 20px;
@@ -6,6 +7,7 @@
 }
 
 .about-us-section {
+    font-family: "Raleway", sans-serif;
     max-width: 700px;
     color: #000000;
     font-size: 15px;
@@ -29,6 +31,7 @@
 }
 
 .mission-vision {
+    font-family: "Raleway", sans-serif;
     background: url(src/assets/images/vn-delta.png) center/cover no-repeat;
     width: 100%;
     background-color: #292E36;
@@ -45,6 +48,7 @@
 
 .mission h3,
 .vision h3 {
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     color: #f3ece6;
     font-size: 20px;
@@ -53,6 +57,7 @@
 
 .mission p,
 .vision p {
+    font-family: "Raleway", sans-serif;
     font-style: italic;
     color: #ffffff;
     font-size: 15px;
@@ -62,6 +67,7 @@
 .founder-title {
     margin-bottom: 12px;
     color: #000000;
+    font-family: "Raleway", sans-serif;
     font-size: 28px;
     font-weight: 800;
     text-align: center;

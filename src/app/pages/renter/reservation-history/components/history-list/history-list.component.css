@@ -5,7 +5,8 @@
 h2 {
     margin: 0;
     color: #BF6326;
-    font-family: Inter;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
 }
 
 hr {
@@ -20,6 +21,7 @@ hr {
 
 .reservation-status-option span {
     color: #406567;
+    font-family: "Raleway", sans-serif;
 }
 
 .reservation-status-option span:hover {
@@ -44,11 +46,13 @@ ngb-pagination ::ng-deep ul {
 }
 
 ngb-pagination ::ng-deep ul>li:not(.active)>a {
-    color: #336668 !important
+    color: #336668 !important;
+    font-family: "Raleway", sans-serif;
 }
 
 ngb-pagination ::ng-deep ul>li.active>a {
-    background-color: #336668 !important
+    background-color: #336668 !important;
+    font-family: "Raleway", sans-serif;
 }
 
 ngb-pagination ::ng-deep .page-link:focus {

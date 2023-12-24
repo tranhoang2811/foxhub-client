@@ -15,6 +15,7 @@
 
 .btn {
     color: black;
+    font-family: "Raleway", sans-serif;
     background-color: #F3ECE6;
     font-size: 14px;
     width: 120px !important;
@@ -29,6 +30,7 @@
 
 .active {
     background-color: #336668 !important;
+    font-family: "Raleway", sans-serif;
     color: white !important;
     border-radius: 28px !important;
     border: none;

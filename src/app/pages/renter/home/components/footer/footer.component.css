@@ -1,5 +1,6 @@
 footer {
     background-color: #BF6326;
+    font-family: "Raleway", sans-serif;
     color: white;
     padding: 32px;
     height: 380px;
@@ -12,6 +13,7 @@ footer {
 
 h4 {
     width: fit-content;
+    font-weight:bolder;
 }
 
 ul {
