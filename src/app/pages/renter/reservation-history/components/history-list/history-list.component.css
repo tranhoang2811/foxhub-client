@@ -39,12 +39,23 @@ hr {
     color: red
 }
 
+ngb-pagination ::ng-deep ul {
+    margin-bottom: 0px !important;
+}
+
 ngb-pagination ::ng-deep ul>li:not(.active)>a {
     color: #336668 !important
 }
 
-
-
 ngb-pagination ::ng-deep ul>li.active>a {
     background-color: #336668 !important
+}
+
+ngb-pagination ::ng-deep .page-link:focus {
+    box-shadow: none !important
+}
+
+.active-tab {
+    background-color: antiquewhite;
+    border-radius: 4px;
 }
