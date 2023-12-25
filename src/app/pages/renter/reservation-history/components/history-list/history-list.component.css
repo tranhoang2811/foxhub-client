@@ -60,6 +60,5 @@ ngb-pagination ::ng-deep .page-link:focus {
 }
 
 .active-tab {
-    background-color: antiquewhite;
-    border-radius: 4px;
+    text-decoration: underline;
 }
