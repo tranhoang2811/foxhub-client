@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import {
   NgbDateStruct,
@@ -13,6 +13,8 @@ import {
   styleUrls: ['./edit-time-modal.component.css'],
 })
 export class EditTimeModalComponent {
+  @Input() timeRange!: Record<string, string>;
+  @Output() onDateSave = new EventEmitter<Record<string, string>>();
   public model: NgbDateStruct = {
     year: new Date().getFullYear(),
     month: new Date().getMonth() + 1,
@@ -25,6 +27,15 @@ export class EditTimeModalComponent {
   private calendar = inject(NgbCalendar);
 
   constructor(private activeModal: NgbActiveModal) {}
+
+  ngOnInit(): void {
+    this.fromDate = NgbDate.from(
+      this.dateParser.parse(this.timeRange['checkIn'])
+    );
+    this.toDate = NgbDate.from(
+      this.dateParser.parse(this.timeRange['checkOut'])
+    );
+  }
 
   public onDateSelection(date: NgbDate) {
     const currentDate = this.calendar.getToday();
@@ -87,5 +98,13 @@ export class EditTimeModalComponent {
   public deleteDate() {
     this.fromDate = null;
     this.toDate = null;
+  }
+
+  public saveDate() {
+    this.onDateSave.emit({
+      checkIn: this.dateParser.format(this.fromDate),
+      checkOut: this.dateParser.format(this.toDate),
+    });
+    this.closeModal();
   }
 }

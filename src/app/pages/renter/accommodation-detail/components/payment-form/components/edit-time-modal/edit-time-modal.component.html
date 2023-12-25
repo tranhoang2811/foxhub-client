@@ -31,7 +31,8 @@
     (click)="deleteDate()">
     Delete Date
   </button>
-  <button type="button" class="save-button btn fw-bold" data-bs-dismiss="modal">
+  <button type="button" class="save-button btn fw-bold" data-bs-dismiss="modal" [disabled]="!fromDate || !toDate"
+    (click)="saveDate()">
     Save
   </button>
 </div>

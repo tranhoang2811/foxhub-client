@@ -3,6 +3,7 @@ import { IRoom } from 'src/app/interfaces/room';
 
 export interface IBookingDetailSectionData {
   title: string;
+  price: number;
   sources: string[];
   description: string;
   rooms: IRoom[];

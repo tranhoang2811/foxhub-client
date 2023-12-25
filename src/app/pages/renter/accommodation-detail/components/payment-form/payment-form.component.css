@@ -70,3 +70,7 @@ hr {
 .information {
   margin-bottom: 5px;
 }
+
+.selected-payment-method {
+  border: 2px solid black;
+}

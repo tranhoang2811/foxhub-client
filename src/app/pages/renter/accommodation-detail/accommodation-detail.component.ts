@@ -40,6 +40,7 @@ export class AccommodationDetailComponent {
           sources: accommodation.media.map((media: IMedia) => media.source),
           description: accommodation.description ?? '',
           rooms: accommodation.rooms,
+          price: accommodation.price,
         };
         this.infrastructureSectionData = {
           amenities: accommodation.properties ?? [],
