@@ -18,7 +18,7 @@
             -
           </button>
           <span>{{ numberOfAdult }}</span>
-          <button class="border rounded-circle" (click)="increaseNumberOfAdult()">
+          <button class="border rounded-circle" (click)="increaseNumberOfAdult()" [disabled]="isMaxNumberOfGuest">
             +
           </button>
         </div>
@@ -33,7 +33,7 @@
             -
           </button>
           <span>{{ numberOfChildren }}</span>
-          <button class="border rounded-circle" (click)="increaseNumberOfChildren()">
+          <button class="border rounded-circle" (click)="increaseNumberOfChildren()" [disabled]="isMaxNumberOfGuest">
             +
           </button>
         </div>
@@ -47,7 +47,7 @@
     (click)="closeModal()">
     Cancel
   </button>
-  <button type="button" class="save-button btn fw-bold" data-bs-dismiss="modal">
+  <button type="button" class="save-button btn fw-bold" data-bs-dismiss="modal" (click)="saveNumberOfGuest()">
     Save
   </button>
 </div>

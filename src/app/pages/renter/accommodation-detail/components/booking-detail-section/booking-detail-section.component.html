@@ -27,7 +27,9 @@
     <div>
       <h3 class="mb-3 fw-bold">Code Room</h3>
       <div class="d-flex flex-wrap gap-3">
-        <button class="btn btn-outline-secondary" *ngFor="let room of bookingDetailSectionData?.rooms ">{{ room.code
+        <button class="btn btn-secondary" *ngFor="let room of bookingDetailSectionData?.rooms"
+          [class.active-button]="room.status === 'available'" [class.selected-button]="room.id === selectedRoom?.id"
+          [disabled]="room.status !== 'available'" (click)="selectRoom(room)">{{ room.code
           }}</button>
       </div>
     </div>

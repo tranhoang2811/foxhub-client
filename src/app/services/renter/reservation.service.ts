@@ -30,7 +30,10 @@ export class ReservationService {
   }
 
   public makeReservation(
-    reservation: Omit<IReservation, 'id' | 'renterId' | 'paymentCode'>
+    reservation: Omit<
+      IReservation,
+      'id' | 'renterId' | 'paymentCode' | 'status'
+    >
   ): Observable<IReservation> {
     const url = `/${EUserRole.RENTER}/reservations`;
 
