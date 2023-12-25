@@ -1,0 +1,27 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 2px dashed #000; /* Màu đen */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-size: 14px;
+}
+
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+.finalcontent-in-frame {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.upload {
+    text-decoration: none;
+}

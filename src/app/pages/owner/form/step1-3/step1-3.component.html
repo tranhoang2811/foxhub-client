@@ -1,0 +1,99 @@
+<div class="wrapper">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+
+    <div class="contain-holder">
+        <div class="title">Where is your accommodation located?</div>
+        <div class="sub-title">
+            Your address is only shared with guests after they successfully book
+        </div>
+        <div class="search-wrapper"></div>
+        <div class="map-container">
+            <input id="search-box" type="text" placeholder="Enter address">
+            <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d106.699087!3d10.771493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f590c5c7927%3A0x4f06db837dd7be8d!2sYour%20Location!5e0!3m2!1sen!2sus!4v1637750920408!5m2!1sen!2sus">
+            </iframe>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <app-footer-step-one></app-footer-step-one>
+        </div>
+        <div class="btn-wrapper">
+            <button class="back-btn" routerLink="/owner/post/add/step1-2">Back</button>
+            <button class="next-btn" routerLink="/owner/post/add/step2-1">Continue</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 15,
+            mapTypeId: 'roadmap'
+        });
+
+        var input = document.getElementById('search-box');
+        var searchBox = new google.maps.places.SearchBox(input);
+
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        map.addListener('bounds_changed', function () {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+
+        searchBox.addListener('places_changed', function () {
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            markers.forEach(function (marker) {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function (place) {
+                if (!place.geometry) {
+                    console.log("Returned place contains no geometry");
+                    return;
+                }
+                var icon = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                markers.push(new google.maps.Marker({
+                    map: map,
+                    icon: icon,
+                    title: place.name,
+                    position: place.geometry.location
+                }));
+
+                if (place.geometry.viewport) {
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initAutocomplete" async
+    defer></script>
