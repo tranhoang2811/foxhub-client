@@ -3,20 +3,20 @@
 </h2>
 <hr>
 <div class="d-flex reservation-status-option">
-    <span>
+    <span (click)="changeTab('all')" [class.active-tab]="currentTab === 'all'">
         All
     </span>
-    <span>
+    <span (click)="changeTab('active')" [class.active-tab]="currentTab === 'active'">
         Active
     </span>
-    <span>
+    <span (click)="changeTab('completed')" [class.active-tab]="currentTab === 'completed'">
         Completed
     </span>
-    <span>
+    <span (click)="changeTab('cancel')" [class.active-tab]="currentTab === 'cancel'">
         Cancelled
     </span>
 </div>
-<div class="d-flex flex-column justify-content-between list">
+<div class="d-flex flex-column gap-2 list">
     <app-history-item *ngFor="let reservation of reservations" [reservation]="reservation"></app-history-item>
 </div>
 <div class="d-flex justify-content-center pagination-container">
