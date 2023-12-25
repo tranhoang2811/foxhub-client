@@ -5,25 +5,25 @@
     <div class="d-flex flex-column justify-content-between item-detail">
         <div class="reservation-id item-detail-part">
             <p><b>Reservation ID</b></p>
-            <p><b>507f1f77bcf86cd799439011</b></p>
+            <p><b>{{reservation?.id}}</b></p>
         </div>
         <div class="item-detail-part">
             <img src="assets/icons/calendar.png" class="icon">
             <p>
-                24 Nov 2023 - 27 Nov 2023, UTC+07:00
+                {{formatDate(reservation?.checkIn) + ' - ' +formatDate(reservation?.checkOut)}}
             </p>
         </div>
         <div class="item-detail-part">
             <img src="assets/icons/user.png" class="icon">
             <p>
-                1 person
+                {{(reservation?.numberOfAdult || 0) + (reservation?.numberOfChildren || 0)}} person
             </p>
         </div>
         <div class="item-detail-part">
             <span class="status-icon" style="background-color: green;">
             </span>
             <p>
-                Status: active
+                Status: {{getStatusTitle(reservation?.checkIn, reservation?.checkOut, reservation?.status)}}
             </p>
         </div>
     </div>
