@@ -1,0 +1,103 @@
+<div class="view-post-list">
+  <div class="bar">
+    <div class="search">
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search post by ID"
+          class="input-search"
+          [(ngModel)]="searchTerm"
+        />
+        <hr class="hr-vertical" />
+        <img src="assets/icons/search.png" alt="no img" class="search-icon" />
+      </div>
+      <div class="filter">
+        <button class="filter-btn">
+          <img src="assets/icons/filter.png" alt="no img" class="filter-icon" />
+          Filter
+        </button>
+        <div class="filter-content">
+          <div class="filter-item-vertical">
+            <div class="status-item">
+              <div class="status" data-status="Approved">
+                <input
+                  type="checkbox"
+                  name="status"
+                  id="Approved"
+                  class="input-checkbox"
+                />
+                <label for="approved">APPROVED</label>
+              </div>
+              <div class="status" data-status="Pending">
+                <input
+                  type="checkbox"
+                  name="status"
+                  id="Pending"
+                  class="input-checkbox"
+                />
+                <label for="pending">PENDING</label>
+              </div>
+              <div class="status" data-status="Rejected">
+                <input
+                  type="checkbox"
+                  name="status"
+                  id="Rejected"
+                  class="input-checkbox"
+                />
+                <label for="rejected">REJECTED</label>
+              </div>
+              <div class="status" data-status="Banned">
+                <input
+                  type="checkbox"
+                  name="status"
+                  id="Banned"
+                  class="input-checkbox"
+                />
+                <label for="banned">BANNED</label>
+              </div>
+            </div>
+          </div>
+          <div class="item-submit">
+            <button class="submit-btn">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table-container">
+    <table class="accommodation-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Owner Name</th>
+          <th>Latitude & Longitude</th>
+          <th>Date Apply</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let accommodation of accommodations | idFilter : searchTerm"
+        >
+          <td>{{ accommodation.id }}</td>
+          <td>{{ accommodation.ownerName }}</td>
+          <td>{{ accommodation.latitude }} & {{ accommodation.longitude }}</td>
+          <td>24/12/2023</td>
+          <td>
+            <div [ngClass]="getStatusClass(accommodation.status)">
+              {{ accommodation.status | uppercase }}
+            </div>
+          </td>
+          <td>
+            <img
+              src="assets/icons/edit.png"
+              alt="edit-icon"
+              [routerLink]="['/staff/accommodation-detail/', accommodation.id]"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

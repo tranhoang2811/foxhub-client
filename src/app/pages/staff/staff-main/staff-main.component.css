@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-sidebar {
+  display: flex;
+}
+
+.box-listings {
+  flex: 1;
+  padding: 20px 0px;
+  padding-left: 92px;
+}

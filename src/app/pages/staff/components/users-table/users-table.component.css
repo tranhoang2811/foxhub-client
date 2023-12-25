@@ -1,0 +1,248 @@
+.bar {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar .search {
+  gap: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.bar .search-bar {
+  width: 480px;
+  border: 1px solid #bf6326;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.bar .input-search {
+  border: 0px;
+  background-color: transparent;
+  width: calc(100% - 80px);
+  border-style: hidden;
+}
+
+.bar .search-icon {
+  width: 8%;
+  height: auto;
+}
+
+.bar .input-search:focus {
+  outline: none;
+}
+
+.bar .hr-vertical {
+  border: 1px solid #c2c2c2;
+  width: 30px;
+  transform: rotate(90deg);
+  height: 1px;
+  margin: 8px;
+}
+
+.bar .add-post {
+  height: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  background: #c2c2c2;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  padding: 20px 40px;
+}
+
+.bar .add-post:hover {
+  background-color: #cd5c08;
+  color: #fff;
+}
+
+.status {
+  font-weight: bolder;
+  padding: 8px 16px;
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.status[data-status="approved"] {
+  background: #daf6d3;
+}
+
+.status[data-status="pending"] {
+  background: #fff0bb;
+}
+
+.status[data-status="rejected"] {
+  background: #ffcdcd;
+}
+
+.status[data-status="banned"] {
+  color: white;
+  background: #8f8f8f;
+}
+
+.filter {
+  height: fit-content;
+  display: flex;
+  border: 1px solid #c2c2c2;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.filter-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-icon {
+  width: 20%;
+  height: auto;
+}
+
+.filter-content {
+  display: none;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+  top: 100%;
+  padding: 20px;
+}
+
+.filter-item-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-content label {
+  font-size: 14px;
+  width: fit-content;
+}
+
+.filter-content .input-checkbox {
+  width: 24px;
+  height: 24px;
+  margin: 0px;
+}
+
+.filter-content .input-checkbox:checked {
+  background-color: black;
+  border: 2px solid black;
+}
+
+.filter:hover .filter-content {
+  display: inline-block;
+  position: absolute;
+}
+
+.filter .status-item {
+  padding: 0px 20px;
+  gap: 20px;
+}
+
+.filter .item-submit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter .submit-btn {
+  border: 0px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  background-color: #bf6326;
+  color: white;
+}
+
+.view-post-list {
+  margin-left: 240px;
+}
+
+.table-container {
+  border: 2px solid black; /*TODO: Delete after completing*/
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 1150px; /*TODO: Adjust to fit the user's screen?*/
+  max-height: 590px; /*TODO: Adjust to fit the user's screen?*/
+  overflow-y: scroll;
+}
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.user-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.user-table thead th {
+  text-align: center;
+  padding: 28px;
+  color: #bf6326;
+}
+.user-table tbody td {
+  padding: 28px;
+  text-align: center;
+}
+.user-table tbody td img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.user-table tbody tr:nth-child(even) {
+  background-color: #f0efef;
+}
+.user-table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+.status-archived {
+  background-color: #fff0bb;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.status-active {
+  background-color: #daf6d3;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.status-banned {
+  background-color: #8f8f8f;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}

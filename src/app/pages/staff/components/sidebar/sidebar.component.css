@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #cd5c08;
+  --main-transition: 0.5s all ease-in-out;
+}
+
+body {
+  background-color: white;
+}
+
+::selection {
+  color: #f3ece6;
+  background: var(--main-color);
+}
+
+.sidebar {
+  width: fit-content;
+  background-color: #cd5c08;
+  position: fixed;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: var(--main-transition);
+}
+
+.sidebar .profile {
+  width: fit-content;
+  border-radius: 15px;
+  color: white;
+  background-color: var(--main-color);
+  display: flex;
+  place-items: center;
+  font-size: 18px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar .profile-wrapper {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  transition: var(--main-transition);
+}
+
+.sidebar ul li a {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 12px;
+  transition: 0.2s all ease-in-out;
+  font-size: 16px;
+  width: 240px;
+  color: white;
+  text-decoration: none;
+}
+.sidebar ul li a.active-link,
+.sidebar ul li a:hover {
+  background-color: #a54c20;
+  color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  scale: 1.1;
+}
+
+.sidebar .logo-group {
+  display: inline-flex;
+  background-color: #f3ece6;
+  align-items: center;
+  /* Center vertically */
+  justify-content: left;
+  /* Center horizontally */
+  width: 100%;
+  gap: 20px;
+  padding: 5px 20px;
+}
+
+.sidebar .brand-name {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #cd5c08;
+}
+
+.sidebar .logo-wrapper {
+  width: 60px;
+}
+
+.sidebar .img-wrapper {
+  height: 30px;
+}
+
+.sidebar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+hr {
+  margin: 0px 20px;
+  border: 1px solid white;
+}
