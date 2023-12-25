@@ -9,7 +9,7 @@
             [class.activated-tab]="currentTab==='reservation-history'">Reservation</a>
         <a class="nav-link" [routerLink]="['/renter/home-service']"
             [class.activated-tab]="currentTab==='home-service'">Home Service</a>
-        <a class="nav-link" [routerLink]="['/renter/blog']" [class.activated-tab]="currentTab==='blog'">Blog</a>
+        <a class="nav-link" [routerLink]="['/renter/blog/all']" [class.activated-tab]="currentTab==='blog'">Blog</a>
     </nav>
     <div class="action-group" [class.justify-content-end]="isLoggedIn">
         <div class="btn-group" role="group" *ngIf="!isLoggedIn">
