@@ -62,4 +62,5 @@ export class BlogExperienceComponent {
       author: 'David Wilson',
     },
   ];
+currentTab: any;
 }

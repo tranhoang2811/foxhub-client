@@ -15,6 +15,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-family: "Raleway", sans-serif;
 }
 
 h4 {
@@ -30,9 +31,11 @@ h4 {
   width: 400px;
   height: 10px;
   background-color: #cd5c08;
+  box-sizing: content-box;
+  overflow: visible;
   box-shadow: 2px 2px 4px #888888;
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
 }
 
 .btn-group {
@@ -51,7 +54,6 @@ h4 {
   padding: 8px 36px;
   border-radius: 30px;
 }
-
 .btn-group .btn:focus {
   background-color: #cd5c08;
   color: white;
@@ -62,13 +64,13 @@ h4 {
 h1 {
   color: white;
   font-size: 96px;
-  font-family: "Raleway", sans-serif;
   font-weight: 900;
   text-align: center;
   color: #cd5c08;
   position: relative;
   bottom: 80px;
 }
+
 
 h5 {
   color: #336668;
@@ -83,7 +85,8 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 20px 0px
+  padding: 20px 0px;
+  font-family: "Raleway", sans-serif;
 }
 
 .heading {

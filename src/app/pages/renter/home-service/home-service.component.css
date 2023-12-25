@@ -2,6 +2,9 @@
   gap: 32px
 }
 
+a{
+  text-decoration: none;
+}
 .service-section-heading {
   font-weight: 700;
   color: #bf6326;
@@ -28,7 +31,7 @@
   border-radius: 16px;
   box-shadow: 0px 4px 4px #00000040;
   transition: transform 0.3s ease;
-  padding: 16px
+  padding: 10px;
 }
 
 .fox-service-item:hover {

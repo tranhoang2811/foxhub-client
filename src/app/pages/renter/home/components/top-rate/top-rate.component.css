@@ -4,13 +4,13 @@
 
 .best-for-you-section {
     background-color: white;
-    padding: 20px 60px
+    padding: 20px 100px
 }
 
 .best-for-you-section h2 {
     text-align: center;
     color: #A54C20;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     padding-bottom: 20px;
@@ -18,6 +18,8 @@
 
 p {
     margin: 0;
+    font-size: 13px;
+    
 }
 
 .item-address {
