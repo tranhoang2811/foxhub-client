@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 /* Start Global Rules */
 * {
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --main-color: #CD5C08;
+  --main-color: #cd5c08;
   --main-transition: 0.5s all ease-in-out;
 }
 
@@ -20,14 +20,13 @@ body {
 }
 
 ::selection {
-  color: #F3ECE6;
+  color: #f3ece6;
   background: var(--main-color);
 }
 
-
 .sidebar {
   width: fit-content;
-  background-color: #CD5C08;
+  background-color: #cd5c08;
   position: fixed;
   height: 100%;
   top: 50%;
@@ -35,7 +34,6 @@ body {
   overflow: hidden;
   transition: var(--main-transition);
 }
-
 
 .sidebar .profile {
   width: fit-content;
@@ -46,12 +44,12 @@ body {
   place-items: center;
   font-size: 18px;
   padding: 20px;
-  gap: 20px
+  gap: 20px;
 }
 
 .sidebar .profile-wrapper {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .sidebar ul {
@@ -62,7 +60,6 @@ body {
   padding: 10px 20px;
   transition: var(--main-transition);
 }
-
 
 .sidebar ul li a {
   padding: 10px 20px;
@@ -78,17 +75,16 @@ body {
 }
 .sidebar ul li a.active-link,
 .sidebar ul li a:hover {
-  background-color: #A54C20;
+  background-color: #a54c20;
   color: var(--main-color);
   color: white;
   font-weight: bold;
   scale: 1.1;
 }
 
-
 .sidebar .logo-group {
   display: inline-flex;
-  background-color: #F3ECE6;
+  background-color: #f3ece6;
   align-items: center;
   /* Center vertically */
   justify-content: left;
@@ -101,7 +97,7 @@ body {
 .sidebar .brand-name {
   font-weight: bolder;
   font-size: 30px;
-  color: #CD5C08;
+  color: #cd5c08;
 }
 
 .sidebar .logo-wrapper {
@@ -109,7 +105,7 @@ body {
 }
 
 .sidebar .img-wrapper {
-    height: 30px;
+  height: 30px;
 }
 
 .sidebar img {
@@ -119,6 +115,6 @@ body {
 }
 
 hr {
-    margin: 0px 20px;
-    border: 1px solid white;
+  margin: 0px 20px;
+  border: 1px solid white;
 }
