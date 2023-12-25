@@ -52,6 +52,9 @@ h2 {
 .pagination-container li {
     color: red
 }
+a{ 
+    text-decoration: none !important; 
+} 
 
 ngb-pagination ::ng-deep ul {
     margin-bottom: 0px !important;

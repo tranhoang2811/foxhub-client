@@ -54,7 +54,6 @@ h4 {
   padding: 8px 36px;
   border-radius: 30px;
 }
-
 .btn-group .btn:focus {
   background-color: #cd5c08;
   color: white;
@@ -71,6 +70,7 @@ h1 {
   position: relative;
   bottom: 80px;
 }
+
 
 h5 {
   color: #336668;

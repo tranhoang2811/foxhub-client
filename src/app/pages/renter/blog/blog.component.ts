@@ -61,5 +61,7 @@ export class BlogComponent {
       date: '10 Nov, 2023',
     },
   ];
-currentTab: any;
+
+currentTab: string = 'all'; 
+
 }

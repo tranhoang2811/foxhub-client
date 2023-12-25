@@ -22,3 +22,6 @@ img {
 .adventure-content {
     gap: 20px !important;
 }
+.container-fluid{
+    padding: 20px 100px !important;
+}
