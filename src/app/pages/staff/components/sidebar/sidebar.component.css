@@ -76,7 +76,7 @@ body {
   color: white;
   text-decoration: none;
 }
-
+.sidebar ul li a.active-link,
 .sidebar ul li a:hover {
   background-color: #A54C20;
   color: var(--main-color);

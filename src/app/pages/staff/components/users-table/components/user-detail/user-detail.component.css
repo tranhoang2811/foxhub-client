@@ -1,0 +1,114 @@
+.profile-frame {
+  width: 400px;
+  border-radius: 20px;
+  border: 0.5px solid;
+  margin-top: 80px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.edit-profile {
+  padding: 12px 120px;
+}
+
+.status-archived {
+  background-color: #fff0bb;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.status-active {
+  background-color: #daf6d3;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.status-banned {
+  background-color: #8f8f8f;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.change-security button {
+  margin-left: 120px;
+}
+
+hr {
+  width: 240px;
+  margin-left: 80px;
+}
+
+.text-location,
+.text-occupation {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 80px;
+  padding: 12px;
+}
+
+.subtext-location,
+.subtext-occupation {
+  font-size: 16px;
+  margin-left: 120px;
+}
+
+.member {
+  font-weight: 400;
+  color: #858383;
+  font-size: 12px;
+  text-align: center;
+}
+
+.about-me {
+  font-weight: bold;
+  font-size: 20px;
+  color: #cd5c08;
+  position: absolute;
+  top: 74px;
+  margin-left: 520px;
+}
+
+.about-me-frame {
+  width: 840px;
+  border-radius: 10px;
+  border: 0.5px solid;
+  position: absolute;
+  top: 110px;
+  margin-left: 520px;
+}
+
+.text-about-me {
+  align-items: center;
+  margin: 20px;
+}
+
+.text-about-me button {
+  display: flex;
+  margin-left: 440px;
+}
+.back-button {
+  background-color: white;
+  color: black;
+  border: 2px solid #bf6326;
+  transition: background-color 0.3s, color 0.3s;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+}
