@@ -49,19 +49,19 @@ const routes: Routes = [
     component: ListingComponent,
   },
   {
-    path: 'renter/blog-journey',
+    path: 'renter/blog/journey',
     component:  BlogJourneyComponent,
   },
   {
-    path: 'renter/blog-experience',
+    path: 'renter/blog/experience',
     component: BlogExperienceComponent,
   },
   {
-    path: 'renter/blog-culture-cuisine',
+    path: 'renter/blog/culture-cuisine',
     component: BlogCultureCusineComponent,
   },
   {
-    path: 'renter/blog',
+    path: 'renter/blog/all',
     component: BlogComponent,
   },
 ];

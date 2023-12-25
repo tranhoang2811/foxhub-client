@@ -15,14 +15,20 @@
 .navbar-container img {
     max-height: 68px;
 }
-
 .navbar-container .nav-link {
     color: #CD5C08;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 700;
     vertical-align: middle;
 }
-
+.navbar-container .nav-link:hover {
+    color: #ff7812;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: middle;
+}
 .navbar-container .btn-group {
     gap: 12px;
 }
@@ -35,6 +41,7 @@
     color: white;
     background-color: #CD5C08;
     padding: 8px 28px;
+    font-family: "Raleway", sans-serif;
 }
 
 .navbar-container .action-group {
@@ -44,10 +51,10 @@
 }
 
 .navbar-container .btn-group .sign-up {
-    background-color: transparent !important;
     padding: 8px 24px;
     border: 1px solid#CD5C08;
-    color: #CD5C08
+    font-family: "Raleway", sans-serif;
+    color:#CD5C08;
 }
 
 .avatar {
@@ -64,9 +71,20 @@
 }
 
 .activated-tab {
-    background-color: #dfa686;
-    border-radius: 4px;
+    text-decoration: underline;
 }
+.navbar-container .btn-group .log-in:hover {
+    cursor: pointer;
+    background-color: #df6a11!important; 
+    color: #ffffff;
+}
+.navbar-container .btn-group .sign-up:hover {
+    cursor: pointer;
+    background-color: #ffe6d3!important; 
+    color: #b44e00;
+}
+
+
 
 .setting-button:hover {
     background-color: rgb(207, 192, 192) !important;
