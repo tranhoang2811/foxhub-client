@@ -1,0 +1,52 @@
+@font-face {
+    font-family: font_name;
+    src: url('https://fonts.google.com/specimen/Raleway') format('truetype'),
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 40px
+}
+
+
+.back-btn {
+    background-color: #D9D9D9; 
+    padding: 10px 30px;
+    border: 0px;
+    font-weight: bolder;
+} 
+
+.next-btn {
+    background-color: #cd5c08; 
+    color: white;
+    padding: 10px 30px;
+    border: 0px;
+    font-weight: bolder;
+}
+
+.header {
+    width: 100%
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.sub-title {
+    color: #868383;
+    font-size: 18px;
+    font-style: italic;
+}

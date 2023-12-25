@@ -1,0 +1,52 @@
+.item-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.item-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.frame {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    gap: 20px
+}
+
+.frame:hover {
+    background-color: #ddd; 
+}
+
+.frame img {
+    width: 30px;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.item-name {
+    font-size: 20px;
+}
+
+.other {
+    width: 100%;
+    height: fit-content; 
+    padding: 5px 10px; 
+    border-radius: 12px;
+    justify-content: center;
+    font-size: 16px;
+}

@@ -1,0 +1,33 @@
+.contain-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 120px
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.step {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+img {
+    width: 40%;
+    height: max-content;
+}
+

@@ -1,0 +1,112 @@
+<div class="contain-cover">
+
+  <div class="bar">
+    <div class="search">
+      <div class="search-bar">
+        <input type="text" placeholder="Search post by ID" class="input-search">
+        <hr class="hr-vertical">
+        <img src="assets/icons/search.png" alt="no img" class="search-icon">
+      </div>
+      <div class="filter">
+
+        <button class="filter-btn">
+          <img src="assets/icons/filter.png" alt="no img" class="filter-icon">
+          Filter</button>
+        <div class="filter-content">
+          <div class="filter-item">
+            <div class="filter-item-vertical">
+              <div class="item-name">Available</div>
+              <div class="filter-item-horizontal">
+                <input type="checkbox" name="available" value="Yes" id="Yes" class="input-checkbox">
+                <label for="Yes">Yes</label>
+                <input type="checkbox" name="available" value="No" id="No" class="input-checkbox">
+                <label for="No">No</label>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="filter-item-vertical">
+            <div class="item-name">Status</div>
+            <div class="status-item">
+              <div class="status" data-status="Approved">
+                <input type="checkbox" name="status" id="Approved" class="input-checkbox">
+                <label for="approved">APPROVED</label>
+              </div>
+              <div class="status" data-status="Pending">
+                <input type="checkbox" name="status" id="Pending" class="input-checkbox">
+                <label for="pending">PENDING</label>
+              </div>
+              <div class="status" data-status="Rejected">
+                <input type="checkbox" name="status" id="Rejected" class="input-checkbox">
+                <label for="rejected">REJECTED</label>
+              </div>
+              <div class="status" data-status="Banned">
+                <input type="checkbox" name="status" id="Banned" class="input-checkbox">
+                <label for="banned">BANNED</label>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="filter-item">
+            <div class="filter-item-vertical">
+              <div class="item-name">Apply Date</div>
+              <div class="filter-item-horizontal">
+                <label for="From">From</label>
+                <input type="date" name="Period" id="From">
+                <label for="To">To</label>
+                <input type="date" name="Period" id="To">
+              </div>
+            </div>
+          </div>
+          <div class="item-submit">
+            <button class="submit-btn">Done</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <a routerLink="/owner/post/add/step1-1"><button class="add-post">
+        + Add Post
+      </button></a>
+  </div>
+
+  <div class="box">
+    <img src="http://dummyimage.com/205x100.png/cc0000/ffffff" alt="" class="img-first">
+    <div class="img-more">
+      <img src="http://dummyimage.com/139x100.png/5fa2dd/ffffff" alt="" class="img-second">
+      <div class="img-overlay">
+        <img src="http://dummyimage.com/192x100.png/cc0000/ffffff" alt="" class="img-third">
+        <div class="img-text">
+          <p>+</p>
+          <p>1</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="item">
+        <span class="item-name">ID:</span>
+        <span>6583f50de10537268dcd2f3b</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Latitude & Lontitude:</span>
+        <span>28.628189 & 117.117138</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Date Apply:</span>
+        <span>24/12/2023</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Status:</span>
+        <span class="status" data-status="approved">APPROVED</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Available:</span>
+        <span>No</span>
+      </div>
+      <div class="item" routerLink="/owner/post/6583f50de10537268dcd2f3b">
+        <button><i>Details</i></button>
+      </div>
+    </div>
+  </div>
+
+</div>
