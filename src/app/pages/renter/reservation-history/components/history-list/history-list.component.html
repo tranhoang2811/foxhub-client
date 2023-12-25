@@ -20,6 +20,6 @@
     <app-history-item *ngFor="let reservation of reservations" [reservation]="reservation"></app-history-item>
 </div>
 <div class="d-flex justify-content-center pagination-container">
-    <ngb-pagination [collectionSize]="totalCount" [pageSize]="pageSize" [(page)]="page" [ellipses]="true"
+    <ngb-pagination [collectionSize]="totalCount" [pageSize]="pageSize" [(page)]="page" [ellipses]="true" [maxSize]="4"
         (pageChange)="pageChanged($event)" />
 </div>
