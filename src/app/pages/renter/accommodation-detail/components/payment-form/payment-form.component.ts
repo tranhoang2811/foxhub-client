@@ -105,5 +105,6 @@ export class PaymentFormComponent {
       roomId: this.selectedRoom?.id ?? '',
     };
     this.reservationService.makeReservation(reservation).subscribe();
+    this.closeModal()
   }
 }
