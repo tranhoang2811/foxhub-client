@@ -10,6 +10,7 @@ import { IPaginatedAccommodation } from 'src/app/interfaces/api/renter/accommoda
 import { IPaginationList } from 'src/app/interfaces/common';
 import { IFilter } from 'src/app/interfaces/query';
 import { ErrorService } from '../error.service';
+import { IUser } from 'src/app/interfaces/user';
 
 @Injectable({
   providedIn: 'root',
@@ -37,6 +38,19 @@ export class AccommodationService {
 
     return this.httpClient
       .get<IAccommodationWithRelations>(url)
+      .pipe(retry(2), catchError(this.errorService.handleError));
+  }
+
+  public getUsersInformation(): Observable<IUser[]> {
+    const url = `/${EUserRole.STAFF}/users`;
+    return this.httpClient.get<IUser[]>(url);
+  }
+
+  public getUserById(userId: string): Observable<IUser> {
+    const url = `/${EUserRole.STAFF}/users/${userId}`;
+
+    return this.httpClient
+      .get<IUser>(url)
       .pipe(retry(2), catchError(this.errorService.handleError));
   }
 }

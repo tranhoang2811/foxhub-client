@@ -187,39 +187,39 @@
   max-height: 590px; /*TODO: Adjust to fit the user's screen?*/
   overflow-y: scroll;
 }
-.accommodation-table {
+.user-table {
   width: 100%;
   border-collapse: collapse;
 }
-.accommodation-table thead {
+.user-table thead {
   position: sticky;
   top: 0;
   background-color: #fff;
 }
-.accommodation-table thead th {
+.user-table thead th {
   text-align: center;
   padding: 28px;
   color: #bf6326;
 }
-.accommodation-table tbody td {
+.user-table tbody td {
   padding: 28px;
   text-align: center;
 }
-.accommodation-table tbody td img {
+.user-table tbody td img {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-.accommodation-table tbody tr:nth-child(even) {
+.user-table tbody tr:nth-child(even) {
   background-color: #f0efef;
 }
-.accommodation-table tbody tr:nth-child(odd) {
+.user-table tbody tr:nth-child(odd) {
   background-color: white;
 }
 .table-container::-webkit-scrollbar {
   display: none;
 }
-.status-pending {
+.status-archived {
   background-color: #fff0bb;
   padding: 4px;
   text-align: center;
@@ -228,7 +228,7 @@
   justify-content: center;
   border-radius: 8px;
 }
-.status-approved {
+.status-active {
   background-color: #daf6d3;
   padding: 4px;
   text-align: center;
@@ -239,15 +239,6 @@
 }
 .status-banned {
   background-color: #8f8f8f;
-  padding: 4px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-}
-.status-rejected {
-  background-color: #ffcdcd;
   padding: 4px;
   text-align: center;
   display: flex;
