@@ -2,6 +2,9 @@
   gap: 32px
 }
 
+a{
+  text-decoration: none;
+}
 .service-section-heading {
   font-weight: 700;
   color: #bf6326;
