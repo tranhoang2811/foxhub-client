@@ -42,6 +42,10 @@ export class HistoryItemComponent {
       return 'Cancelled';
     }
 
+    if (status === EReservationPaymentStatus.PENDING) {
+      return 'Pending';
+    }
+
     return 'Expired';
   }
 }
